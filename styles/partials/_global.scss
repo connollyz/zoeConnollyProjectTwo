@@ -18,6 +18,7 @@ li{
 
 a{
     text-decoration: none;
+    color: #ffffff;
 }
 
 //basic font styles
@@ -59,7 +60,6 @@ nav a{
     line-height: 1.8rem;//29px
     letter-spacing: 0.06rem;//1px
     text-align: center;
-    color: #ffffff;
     &:hover{
         color: $primaryColor
     }
@@ -69,20 +69,68 @@ nav a{
 
 .logo a, .button{
     font-family: $secondaryFont;
-    text-align: center;
     font-weight: 900i;//black italic
 }
 
-.logo a{
-    color: $primaryColor;
-    text-transform: uppercase;
-    font-size: 2.16rem ;//34.6px
-}
+
 
 .button{
     font-size: 1.25rem;//20px
     line-height: 2rem;//32px
     letter-spacing: 0.06rem;//1px
-    color:#ffffff;
+    text-align: center;
     background: $secondaryColor;
 }
+
+
+
+//header styles
+
+header{
+    padding-top: 1px;
+}
+.skip{
+    position: absolute;
+    left: -1000px;
+    top:100px;
+    font-weight: 300;
+    z-index: 999;
+    width: 20%;
+    padding: 5px;
+    &:focus{
+        left: 0;
+    }
+}
+
+
+.navBar{
+    display: flex;
+    margin: 5px 0;
+    height: 65px;
+    border: 1px dotted #fff;
+    .logo{
+        @include flexGrow;
+        a{
+            color: $primaryColor;
+            text-transform: uppercase;
+            font-size: 2.16rem ;//34.6px
+            align-self: center;
+        }//logo a
+    }//logo
+    nav{
+       @include flexGrow;
+        ul{
+            @include flexGrow;
+        }//ul
+        li{
+            @include flexGrow;
+            display: inline-block;
+            text-align: center;
+             a{
+                 @include flexGrow;
+                 justify-content: space-around;
+                 align-self: center;
+            }//a
+        }//li 
+    }//nav
+}//navBar

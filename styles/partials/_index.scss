@@ -1,0 +1,23 @@
+
+//header
+header#home{
+    background: url("../../assets/homeImage1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    h1{
+        font-size: 3.9;//62px
+        letter-spacing: 0.4rem;//6.7px
+        line-height: 3.6rem;//58px
+        text-transform: lowercase;
+        color: $headerColor;
+        span{
+            font-family: $secondaryFont;
+            font-size: 6.95rem;//111.2PX
+            font-weight: 900i;//black italic
+            letter-spacing: normal;
+            text-transform: uppercase;
+            color: $secondaryColor;
+        }//span
+    }//h1
+}//header#home

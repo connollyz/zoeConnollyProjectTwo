@@ -2,17 +2,25 @@
 
 //fonts
 $primaryFont:'Lato', sans-serif;
-$secondayFont:'Playfair Display', serif;
+$secondaryFont:'Playfair Display', serif;
 
 //colors
 $primaryColor: #50e3c2;
 $secondaryColor: #063974;
+$headerColor: #0c5f4c;
 $textColor: #2c2c2c;
 $primaryBackgroundColor: #d2f9f1;
 $secondaryBackgroundColor: #fafffe;
 
 
+
+
+
 // mix ins go here
+@mixin flexGrow {
+    display: flex;
+    flex-grow: 1;
+}
 
 
 
