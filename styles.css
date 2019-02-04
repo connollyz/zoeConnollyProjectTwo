@@ -321,13 +321,14 @@ header {
 }
 
 header .wrapper {
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 header h1 {
+  margin-top: 30%;
   z-index: 999;
 }
 
@@ -426,6 +427,80 @@ header h1 {
   align-self: center;
 }
 
+form {
+  padding: 7%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 25% 70% 5%;
+  grid-gap: 20px 40px;
+  height: 300px;
+}
+
+/* visuallyHidden is code we used in class to hide the lable */
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.formItemOne {
+  border: 1px solid #000;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.formItemTwo {
+  border: 1px solid #000;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.formItemThree {
+  border: 1px solid #000;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/ 3;
+}
+
+.formItemThree input[type="text"] {
+  border: 1px solid #50e3c2;
+  width: 100%;
+  height: 100%;
+}
+
+.formItemFour {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  color: #ffffff;
+}
+
+.formItemOne input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #50e3c2;
+  width: 100%;
+  height: 50%;
+}
+
+.formItemTwo input[type="email"] {
+  border: none;
+  border-bottom: 1px solid #50e3c2;
+  width: 100%;
+  height: 50%;
+}
+
 footer {
   background: #000000;
   padding: 5px 0;
@@ -446,6 +521,13 @@ header#home {
   background: url("../../assets/homeImage1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+header#home .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 header#home h1 {
@@ -645,6 +727,16 @@ header#blogHome .blogBox {
 }
 
 .blogContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background: #fafffe;
 }
 
@@ -665,17 +757,18 @@ header#blogHome .blogBox {
   font-style: italic;
 }
 
-.commentSection {
+.blogSection.commentSection {
   padding: 40px;
+  width: 100%;
 }
 
-.commentSection h3 {
+.blogSection.commentSection h3 {
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 1.5rem;
 }
 
-.post {
+.blogSection.commentSection .post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -688,15 +781,15 @@ header#blogHome .blogBox {
   justify-content: space-between;
 }
 
-.post .userProfileImage {
+.blogSection.commentSection .post .userProfileImage {
   width: 10%;
 }
 
-.post .postText {
+.blogSection.commentSection .post .postText {
   width: 85%;
 }
 
-.post .postText .dateAndByUser {
+.blogSection.commentSection .post .postText .dateAndByUser {
   color: #063974;
   font-weight: 700;
   margin: 0 0 2px 0;
@@ -704,12 +797,54 @@ header#blogHome .blogBox {
 }
 
 aside {
+  border: 1px solid red;
   width: 20%;
   padding: 10px;
   background: #ffffff;
+  height: 600px;
+  margin-top: 8%;
 }
 
 aside h4 {
   font-family: "Lato", sans-serif;
   color: #063974;
+}
+
+header#ContactHome {
+  background: url("/assets/contactImage1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #fafffe;
+}
+
+.contactBox {
+  top: 75%;
+  width: 55%;
+  background: #ffffff;
+}
+
+.contactInformation {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  width: 30%;
+  margin: 8% 0;
+}
+
+.contactInformation .pEmail {
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.contactInformation div p {
+  margin: 5px 0;
 }

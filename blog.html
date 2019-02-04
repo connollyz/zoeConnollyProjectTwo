@@ -20,7 +20,7 @@
 </head>
 <body>
     <!-- Skip -->
-    <a href="#mainContent">Skip to main content</a>
+    <a class="skip button" href="#mainContent">Main Content</a>
         
     <!--blogPage sectionOne bloghome -------------------------------------------------------------->
     <header id="blogHome">
@@ -42,8 +42,10 @@
             </nav>
         </div>
         
-        <!-- subject title -->
-        <h1>Blog</h1>
+        <div class="wrapper">
+            <!-- subject title -->
+            <h1>Blog</h1>
+        </div>
         
         <div class="headerBox boxShadowRight blogBox">
             <img src="/assets/postImage.jpg" alt="View of the walkway leading up to the side of a beach house at dawn with beautiful plants lining the path.">
@@ -51,66 +53,70 @@
     </header>
 
     <!--blogPage  main starts----------------------------------------------------------------->
-    <main id="mainContent blogContent">
+    <main id="mainContent">
+        <div class="blogContent">
+            <!--blogPage sectionTwo blogSection ---------------------------------------------------------->
+            <section class="blogSection">
+                
+                <div class="blogStoryText boxShadowRight">
+                    <h2>Five days of ocean seas</h2>
+                    <p class="date">Monday January 21st, 2019 by <span>Bara</span></p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum nisi dolores numquam placeat. Corporis quod porro vitae molestiae nam. Sequi corrupti quaerat incidunt iusto? Distinctio nesciunt consequuntur fuga quaerat. Amet!</p>
 
-        <!--blogPage sectionTwo blogSection ---------------------------------------------------------->
-        <section class="blogSection">
-    
-            
-            <div class="blogStoryText boxShadowRight">
-                <h2>Five days of ocean seas</h2>
-                <p class="date">Monday January 21st, 2019 by <span>Bara</span></p>
-                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum nisi dolores numquam placeat. Corporis quod porro vitae molestiae nam. Sequi corrupti quaerat incidunt iusto? Distinctio nesciunt consequuntur fuga quaerat. Amet!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam at inventore consequatur! Delectus distinctio repellat impedit accusantium excepturi officiis incidunt porro autem commodi id officia fugiat aliquam in, quam, sequi cupiditate aperiam amet est alias assumenda sint? Reprehenderit molestias natus provident nisi omnis molestiae eos nesciunt nemo quis saepe.</p>
 
-                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam at inventore consequatur! Delectus distinctio repellat impedit accusantium excepturi officiis incidunt porro autem commodi id officia fugiat aliquam in, quam, sequi cupiditate aperiam amet est alias assumenda sint? Reprehenderit molestias natus provident nisi omnis molestiae eos nesciunt nemo quis saepe.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laudantium aliquam facere. Quas facilis inventore quam sequi temporibus beatae, non aut! Ex magnam iste suscipit, culpa ab, dolore facere accusantium recusandae laboriosam minima cumque quia! Laborum voluptatem, exercitationem officiis deleniti praesentium, est mollitia minima eligendi beatae consequuntur debitis! Totam accusamus velit officiis laborum exercitationem doloremque, sed repellendus officia ex? Soluta recusandae eveniet quas, quibusdam molestiae animi incidunt deleniti voluptatum consectetur reprehenderit nisi at commodi consequuntur voluptates dignissimos tempore impedit consequatur!</p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laudantium aliquam facere. Quas facilis inventore quam sequi temporibus beatae, non aut! Ex magnam iste suscipit, culpa ab, dolore facere accusantium recusandae laboriosam minima cumque quia! Laborum voluptatem, exercitationem officiis deleniti praesentium, est mollitia minima eligendi beatae consequuntur debitis! Totam accusamus velit officiis laborum exercitationem doloremque, sed repellendus officia ex? Soluta recusandae eveniet quas, quibusdam molestiae animi incidunt deleniti voluptatum consectetur reprehenderit nisi at commodi consequuntur voluptates dignissimos tempore impedit consequatur!</p>
-
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt modi, tenetur sunt delectus, eligendi harum numquam ab debitis esse voluptas consequuntur officiis reprehenderit, placeat corrupti maxime blanditiis totam temporibus reiciendis.</p>
-
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt modi, tenetur sunt delectus, eligendi harum numquam ab debitis esse voluptas consequuntur officiis reprehenderit, placeat corrupti maxime blanditiis totam temporibus reiciendis.</p>
                 </div>  
-        </section>
-
-        <!--blogPage sectionThree commentSection ---------------------------------------------------->
-        <Section class="blogSection commentSection">
-            <h3>Comments&#58;</h3>
-            <div class="comments">
-                <!-- postOne -->
-                <div class="post">
-                    <div class="userProfileImage">
-                        <img src="/assets/commentImage.jpg" alt="User Photo">
+           
+                <div class="blogSection commentSection">
+                    <h3>Comments&#58;</h3>
+                    <div class="comments">
+                        <!-- postOne -->
+                        <div class="post">
+                            <div class="userProfileImage">
+                                <img src="/assets/commentImage.jpg" alt="User Photo">
+                            </div>
+                            <div class="postText">
+                                <p class="dateAndByUser">Tuesday October 9th&#44; 2018 by Reyansh</p>
+                                <p class="postComment">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit optio dolorum voluptas quas corporis reprehenderit totam quibusdam natus, saepe ad iste asperiores provident adipisci itaque repudiandae. Asperiores consequuntur fugit magnam officia sunt dolore facere earum in maxime eos, tempore non aspernatur excepturi! Ipsa qui rerum dolorem animi veniam alias ipsam.</p>
+                            </div>
+                        </div>
+                        <!-- postTwo -->
+                        <div class="post">
+                            <div class="userProfileImage">
+                                <img src="/assets/commentImage2.jpg" alt="User photo">
+                            </div>
+                            <div class="postText">
+                                <p class="dateAndByUser">Wednesday October 10th&#44; 2018 by Olivia</p>
+                                <p class="postComment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, sit exercitationem debitis beatae in enim id quos voluptates necessitatibus sapiente dicta dolorem, incidunt sunt vitae? Atque molestias qui a impedit?</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="postText">
-                        <p class="dateAndByUser">Tuesday October 9th&#44; 2018 by Reyansh</p>
-                        <p class="postComment">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit optio dolorum voluptas quas corporis reprehenderit totam quibusdam natus, saepe ad iste asperiores provident adipisci itaque repudiandae. Asperiores consequuntur fugit magnam officia sunt dolore facere earum in maxime eos, tempore non aspernatur excepturi! Ipsa qui rerum dolorem animi veniam alias ipsam.</p>
-                    </div>
+                    <form>
+                        <div class="formItemOne">
+                            <label class="visuallyHidden" for="name">Name</label>
+                            <input type="text" id="name" placeholder="Name">
+                        </div>
+                    
+                        <div class="formItemTwo">
+                            <label class="visuallyHidden" for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Email Address">
+                        </div>
+                    
+                        <div class="formItemThree">
+                            <label class="visuallyHidden" for="comment">Comment</label>
+                            <input type="text" id="comment" placeholder="Message">
+                        </div>
+                    
+                        <submit class="formItemFour button">Submit</submit>
+                    </form>
                 </div>
-                <!-- postTwo -->
-                <div class="post">
-                    <div class="userProfileImage">
-                        <img src="/assets/commentImage2.jpg" alt="User photo">
-                    </div>
-                    <div class="postText">
-                        <p class="dateAndByUser">Wednesday October 10th&#44; 2018 by Olivia</p>
-                        <p class="postComment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, sit exercitationem debitis beatae in enim id quos voluptates necessitatibus sapiente dicta dolorem, incidunt sunt vitae? Atque molestias qui a impedit?</p>
-                    </div>
-                </div>
-            </div>
-            <form action="submit">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Name">
+            </section>
+        
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="Email Address">
-
-                <label for="comment">Comment</label>
-                <input type="text" id="comment" placeholder="Comment">
-
-                <submit>Post Comment</submit>
-            </form>
-        </Section>
-
-        <!--blogPage  sectionFour aside -------------------------------------------------------------->
+         <!--blogPage  sectionthree aside -------------------------------------------------------------->
         <aside>
             <div class="sideBar">
                 <div class="sideBarImage">
@@ -128,9 +134,10 @@
                         <li>Volupt atum </li>
                         <li>Delen iti </li>
                     </ul>
-                </div>
+                 </div>
             </div>
-        </aside>
+        </aside> 
+         </div>
      </main>
 
     <!--blogPage  sectionFive footer -------------------------------------------------------------->

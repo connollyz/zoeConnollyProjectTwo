@@ -1,0 +1,34 @@
+///////////////////////////////////////
+// blogPage sectionOne bloghome
+header#ContactHome{
+    background: url("/assets/contactImage1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}//header#ContactHome
+
+// contactPage  main starts
+.contactArea{
+    display:flex;
+    flex-direction: column;
+    background: $secondaryBackgroundColor;
+}//contactArea
+
+.contactBox{
+    top: 75%;
+    width: 55%;
+    background:#ffffff;
+}//contactBox
+
+.contactInformation{
+    align-self: flex-end;
+    width:30%;
+    margin: 8% 0;
+    .pEmail{
+        margin: 20px 0;
+        font-weight: 700;
+    }//pEmail
+    div p{
+        margin:5px 0;
+    }//div p
+}//contactInformation
+

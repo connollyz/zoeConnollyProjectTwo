@@ -5,6 +5,9 @@ header#home{
     background: url("../../assets/homeImage1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    .wrapper{
+        flex-direction: column;
+    }
     h1{
         font-size: 3.8rem;//62px 
         letter-spacing: 0.4rem;//6.7px

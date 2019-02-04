@@ -5,7 +5,6 @@
     display: flex;
 }//wrapper
 
-// this wrapper should not be here -.-
 
 ///////////////////////////////////////
 // blogPage sectionOne bloghome
@@ -21,6 +20,9 @@ header#blogHome{
 ///////////////////////////////////////
 // blogPage  main starts
 .blogContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background: $secondaryBackgroundColor;
 }//blogContent
 
@@ -28,7 +30,7 @@ header#blogHome{
 ///////////////
 //blogSection
 .blogSection{
-    width:55%; 
+    width: 55%;
     .blogStoryText{
         padding: 35% 40px 40px 40px;
         .date{
@@ -43,39 +45,44 @@ header#blogHome{
 
 ///////////////
 //commentSection
-.commentSection{
+.blogSection.commentSection{
     padding: 40px;
+    width:100%;
     h3{
         font-family: $primaryFont;
         font-weight: 900;
         font-size: 1.5rem;
     }//h3
+    .post{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .userProfileImage{
+            width: 10%;
+        }//userProfileImage
+        .postText{
+            width: 85%;
+            .dateAndByUser{
+                color: $secondaryColor;
+                font-weight: 700;
+                margin: 0 0 2px 0;
+                line-height: 1rem;
+            }//dateAndByUser
+        }//postText
+    }//post
 }//commentSection
 
-.post{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    .userProfileImage{
-        width: 10%;
-    }//userProfileImage
-    .postText{
-        width: 85%;
-        .dateAndByUser{
-            color: $secondaryColor;
-            font-weight: 700;
-            margin: 0 0 2px 0;
-            line-height: 1rem;
-        }//dateAndByUser
-    }//postText
-}//post
+
 
 ///////////////
 //aside
 aside{
+    border: 1px solid red;//tbd
     width: 20%;
     padding: 10px;
     background: #ffffff;
+    height: 600px;
+    margin-top: 8%;
     h4{
         font-family: $primaryFont;
         color: $secondaryColor;

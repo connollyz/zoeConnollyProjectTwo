@@ -21,9 +21,9 @@
 
 <body>
     <!-- Skip -->
-    <a href="#mainContent">Skip to main content</a>
+    <a class="skip button" href="#mainContent">Main Content</a>
 
-    <!--blogPage sectionOne bloghome -------------------------------------------------------------->
+    <!--contactPage sectionOne bloghome -------------------------------------------------------------->
     <header id="ContactHome">
 
         <!--navbar-->
@@ -42,28 +42,37 @@
                 </ul>
             </nav>
         </div>
-
-        <!-- subject title -->
-        <h1>Get in Touch</h1>
+        <div class="wrapper">
+            <!-- subject title -->
+            <h1>Get in Touch</h1>
+        </div>
+        
     </header>
 
-    <!--blogPage  main starts----------------------------------------------------------------->
-    <main id="mainContent">
-        <section class="contactForm">
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Name">
-            
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="Email Address">
-            
-                <label for="comment">Comment</label>
-                <input type="text" id="comment" placeholder="Message">
-            
-                <submit>Submit</submit>
-            </form>
-        </section>
-        <aside>
+    <!--contactPage  main starts-----------------------------------------------------------------> 
+     <main id="mainContent">
+        <div class="contactArea wrapper">
+            <section class="headerBox boxShadowRight contactBox">
+                <form>
+                    <div class="formItemOne">
+                        <label class="visuallyHidden" for="name">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+                    </div>
+                
+                    <div class="formItemTwo">
+                        <label class="visuallyHidden" for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Email Address">
+                    </div>
+                
+                    <div  class="formItemThree">
+                        <label class="visuallyHidden" for="comment">Comment</label>
+                        <input type="text" id="comment" placeholder="Message">
+                    </div>
+                
+                    <submit class="formItemFour button">Submit</submit>
+                </form>
+            </section>
+
             <div class="contactInformation" >
                 <div class="socialMediaLinks">
                     <!-- facebook -->
@@ -78,7 +87,7 @@
                     <!-- whatsApp -->
                     <a href="whatsapp.com" aria-label="Whatsapp Link"><i class="fab fa-whatsapp"></i></a>
                 </div>
-                <p>info@emial.com</p>
+                <p class="pEmail">info@emial.com</p>
                 <div>
                     <p>123-456-7890</p>
                     <p>123 Queen Street West,</p>
@@ -87,5 +96,12 @@
                     <p>M5V2D5</p>
                 </div>
             </div>
-
-        </aside>
+        </div>
+    </main>
+    <!--blogPage  sectionFive footer -------------------------------------------------------------->
+    <footer>
+        <div class="wrapper">
+            <p>Copyright &#169; HackerYou</p>
+        </div>
+    </footer>
+</body>
