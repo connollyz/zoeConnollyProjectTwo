@@ -4,7 +4,6 @@ form{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 4fr 1fr;
   grid-gap: 20px 40px;
-//   height: 300px;
 }//form
 
 /* visuallyHidden is code we used in class to hide the lable */
@@ -22,12 +21,10 @@ form{
 }//visuallyHidden
 
 .formItemOne{
-
     grid-column: 1 / 2;
 }//formItemOne
 
 .formItemTwo{
-
     grid-column: 2 / 3;  
 }//formItemTwo
 

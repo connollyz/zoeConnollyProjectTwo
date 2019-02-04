@@ -51,7 +51,7 @@ header#blogHome{
     h3{
         font-family: $primaryFont;
         font-weight: 900;
-        font-size: 1.5rem;
+        font-size: 1.25rem;//25px
     }//h3
     .post{
         display: flex;
@@ -66,7 +66,7 @@ header#blogHome{
                 color: $secondaryColor;
                 font-weight: 700;
                 margin: 0 0 2px 0;
-                line-height: 1rem;
+                line-height: .8rem;//16px
             }//dateAndByUser
         }//postText
     }//post
@@ -82,14 +82,14 @@ aside{
     background: #ffffff;
     height: 550px;
     margin-top: 8%;
-    font-size: .9rem;
+    font-size: .75rem;//15px
     h4{
         font-family: $primaryFont;
         color: $secondaryColor;
     }//h4
     p{
-        font-size: .9rem;
-        line-height: 1.4rem;
+        font-size: .75rem;//15px
+        line-height: 1.15rem;//23
     }
     .sideBar ul{
         padding: 0;

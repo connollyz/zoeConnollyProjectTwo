@@ -218,7 +218,7 @@ template {
 }
 
 html {
-  font-size: 90%;
+  font-size: 125%;
 }
 
 .wrapper {
@@ -257,18 +257,18 @@ img {
 h1 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 5.4rem;
-  line-height: 3.6rem;
-  letter-spacing: 0.6rem;
+  font-size: 4.35rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.45rem;
   color: #ffffff;
 }
 
 h2 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 2.2rem;
-  line-height: 3.6rem;
-  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.19rem;
   color: #0c5f4c;
   margin: 0;
 }
@@ -276,17 +276,17 @@ h2 {
 p {
   margin: 0 0 30px 0;
   font-family: "Lato", sans-serif;
-  font-size: 1.25rem;
-  line-height: 2rem;
-  letter-spacing: 0.12rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
 }
 
 nav a {
   font-family: "Lato", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 1.8rem;
-  letter-spacing: 0.06rem;
+  line-height: 1.45rem;
+  letter-spacing: 0.05rem;
   text-align: center;
 }
 
@@ -300,9 +300,9 @@ nav a:hover {
 }
 
 .button {
-  font-size: 1.25rem;
-  line-height: 2rem;
-  letter-spacing: 0.06rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.05rem;
   text-align: center;
   text-transform: uppercase;
   background: #063974;
@@ -378,7 +378,7 @@ header h1 {
 .navBar .logo a {
   color: #50e3c2;
   text-transform: uppercase;
-  font-size: 2.16rem;
+  font-size: 1.7rem;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
@@ -530,9 +530,9 @@ header#home .wrapper {
 }
 
 header#home h1 {
-  font-size: 3.8rem;
-  letter-spacing: 0.4rem;
-  line-height: 5.2rem;
+  font-size: 3.1rem;
+  letter-spacing: 0.33rem;
+  line-height: 3.3rem;
   text-transform: lowercase;
   color: #0c5f4c;
   margin: 25% 0 0 30%;
@@ -540,7 +540,7 @@ header#home h1 {
 
 header#home h1 span {
   font-family: "Playfair Display", serif;
-  font-size: 6.9rem;
+  font-size: 5.5rem;
   font-weight: 900i;
   letter-spacing: normal;
   text-transform: uppercase;
@@ -660,6 +660,7 @@ header#home h1 span {
 }
 
 .locationAndPlan .location .locationAndPlanType {
+  margin-top: 40px;
   text-align: right;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -764,7 +765,7 @@ header#blogHome .blogBox {
 .blogSection.commentSection h3 {
   font-family: "Lato", sans-serif;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .blogSection.commentSection .post {
@@ -792,7 +793,7 @@ header#blogHome .blogBox {
   color: #063974;
   font-weight: 700;
   margin: 0 0 2px 0;
-  line-height: 1rem;
+  line-height: .8rem;
 }
 
 aside {
@@ -801,7 +802,7 @@ aside {
   background: #ffffff;
   height: 550px;
   margin-top: 8%;
-  font-size: .9rem;
+  font-size: .75rem;
 }
 
 aside h4 {
@@ -810,8 +811,8 @@ aside h4 {
 }
 
 aside p {
-  font-size: .9rem;
-  line-height: 1.4rem;
+  font-size: .75rem;
+  line-height: 1.15rem;
 }
 
 aside .sideBar ul {
@@ -882,7 +883,7 @@ header#ContactHome {
 
 .socialMediaLinks a {
   color: #2c2c2c;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .socialMediaLinks a:hover {
