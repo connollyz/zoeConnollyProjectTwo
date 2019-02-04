@@ -31,6 +31,9 @@ img{
 .boxShadow{
     box-shadow:  -20px 20px $primaryColor;
 }
+.boxShadowRight{
+    box-shadow: 20px 20px $primaryColor;
+}//boxShadowRight
 
 
 ///////////////////////////////////////
@@ -42,6 +45,7 @@ h1{
     font-size: 5.4rem;//87px
     line-height: 3.6rem;//58px
     letter-spacing: 0.6rem;//9px
+    color: #ffffff;
 }//h1
 
 h2{
@@ -51,9 +55,11 @@ h2{
     line-height: 3.6rem;//58px
     letter-spacing: 0.2rem;//3.8px
     color: $headerColor;
+    margin: 0;
 }//h2
 
 p{
+    margin: 0 0 30px 0;
     font-family: $primaryFont;
     font-size: 1.25rem;//20px
     line-height: 2rem;//32px
@@ -85,73 +91,12 @@ nav a{
     text-transform: uppercase;
     background: $secondaryColor;
     padding: 5px 10px;
+    &:hover, &:active{
+        box-shadow: 5px 5px $primaryColor;
+    }//hover
 }//button
 
 
-///////////////////////////////////////
-
-//header styles
-header{
-    padding-top: 1px;
-    .wrapper{
-        flex-direction: column;
-    }
-}//header
-
-.skip{
-    position: absolute;
-    left: -1000px;
-    top:100px;
-    font-weight: 300;
-    z-index: 999;
-    width: 20%;
-    padding: 5px;
-    &:focus{
-        left: 0;
-    }//focus
-}//skip
-
-.navBar{
-    display: flex;
-    margin: 5px 0;
-    height: 65px;
-    border: 1px dotted #fff;
-    .logo{
-        @include flexGrow;
-        a{
-            color: $primaryColor;
-            text-transform: uppercase;
-            font-size: 2.16rem ;//34.6px
-            align-self: center;
-        }//logo a
-    }//logo
-    nav{
-       @include flexGrow;
-        ul{
-            @include flexGrow;
-        }//ul
-        li{
-            @include flexGrow;
-            display: inline-block;
-            text-align: center;
-             a{
-                 @include flexGrow;
-                 justify-content: space-around;
-                 align-self: center;
-            }//a
-        }//li 
-    }//nav
-}//navBar
 
 
-///////////////////////////////////////
-// footer styles
-footer{
-    background: #000000;
-    padding: 5px 0;
-    p{
-        text-align: center;
-        color: #ffffff;
-        margin: 0;
-    }//p
-}//footer
+

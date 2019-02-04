@@ -249,12 +249,18 @@ img {
   box-shadow: -20px 20px #50e3c2;
 }
 
+.boxShadowRight {
+  -webkit-box-shadow: 20px 20px #50e3c2;
+  box-shadow: 20px 20px #50e3c2;
+}
+
 h1 {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 5.4rem;
   line-height: 3.6rem;
   letter-spacing: 0.6rem;
+  color: #ffffff;
 }
 
 h2 {
@@ -264,9 +270,11 @@ h2 {
   line-height: 3.6rem;
   letter-spacing: 0.2rem;
   color: #0c5f4c;
+  margin: 0;
 }
 
 p {
+  margin: 0 0 30px 0;
   font-family: "Lato", sans-serif;
   font-size: 1.25rem;
   line-height: 2rem;
@@ -301,7 +309,14 @@ nav a:hover {
   padding: 5px 10px;
 }
 
+.button:hover, .button:active {
+  -webkit-box-shadow: 5px 5px #50e3c2;
+  box-shadow: 5px 5px #50e3c2;
+}
+
 header {
+  height: 100vh;
+  position: relative;
   padding-top: 1px;
 }
 
@@ -310,6 +325,18 @@ header .wrapper {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+header h1 {
+  z-index: 999;
+}
+
+.headerBox {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 48%;
+  z-index: 99;
 }
 
 .skip {
@@ -330,6 +357,10 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   margin: 5px 0;
   height: 65px;
   border: 1px dotted #fff;
@@ -400,8 +431,13 @@ footer {
   padding: 5px 0;
 }
 
-footer p {
-  text-align: center;
+footer .wrapper {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer .wrapper p {
   color: #ffffff;
   margin: 0;
 }
@@ -410,8 +446,6 @@ header#home {
   background: url("../../assets/homeImage1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  position: relative;
 }
 
 header#home h1 {
@@ -421,8 +455,6 @@ header#home h1 {
   text-transform: lowercase;
   color: #0c5f4c;
   margin: 25% 0 0 30%;
-  z-index: 999;
-  border: 1px dotted #fff;
 }
 
 header#home h1 span {
@@ -432,14 +464,6 @@ header#home h1 span {
   letter-spacing: normal;
   text-transform: uppercase;
   color: #063974;
-}
-
-.headerBox {
-  position: absolute;
-  top: 35%;
-  left: 0;
-  width: 48%;
-  z-index: 99;
 }
 
 .visitGuyana {
@@ -480,6 +504,7 @@ header#home h1 span {
 }
 
 .infoSection {
+  background: #fafffe;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -488,7 +513,6 @@ header#home h1 span {
 
 .infoSection .infoColumn {
   width: 48%;
-  border: 1px solid red;
 }
 
 .infoSection .card {
@@ -501,7 +525,6 @@ header#home h1 span {
 }
 
 .infoSection .card .cardText {
-  border: 1px solid orange;
   width: 85%;
 }
 
@@ -523,5 +546,170 @@ header#home h1 span {
   text-align: center;
   color: #ffffff;
   font-size: 1.5rem;
-  margin-top: 30px;
+}
+
+.locationAndPlan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #d2f9f1;
+  padding: 8% 0;
+}
+
+.locationAndPlan .locationAndPlanColumn {
+  width: 43%;
+}
+
+.locationAndPlan .locationAndPlanColumn .locationAndPlanType {
+  padding: 32px 0;
+  width: 75%;
+}
+
+.locationAndPlan .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.locationAndPlan .location .locationAndPlanType {
+  text-align: right;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.locationAndPlan .plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.locationAndPlan .plan .locationAndPlanType {
+  margin-bottom: 40px;
+}
+
+.bannerSection {
+  background: url("/assets/bannerImage.jpg");
+  background-size: cover;
+  height: 40vh;
+}
+
+.freeTripSection {
+  background: #fafffe;
+}
+
+.freeTripSection .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  padding: 10%;
+}
+
+.freeTripSection .wrapper a {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  width: 300px;
+}
+
+.wrapper {
+  max-width: 1024px;
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header#blogHome {
+  background: url("/assets/blogImage1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header#blogHome .blogBox {
+  width: 55%;
+  top: 65%;
+}
+
+.blogContent {
+  background: #fafffe;
+}
+
+.blogSection {
+  width: 55%;
+}
+
+.blogSection .blogStoryText {
+  padding: 35% 40px 40px 40px;
+}
+
+.blogSection .blogStoryText .date {
+  color: #063974;
+}
+
+.blogSection .blogStoryText .date span {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.commentSection {
+  padding: 40px;
+}
+
+.commentSection h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.post .userProfileImage {
+  width: 10%;
+}
+
+.post .postText {
+  width: 85%;
+}
+
+.post .postText .dateAndByUser {
+  color: #063974;
+  font-weight: 700;
+  margin: 0 0 2px 0;
+  line-height: 1rem;
+}
+
+aside {
+  width: 20%;
+  padding: 10px;
+  background: #ffffff;
+}
+
+aside h4 {
+  font-family: "Lato", sans-serif;
+  color: #063974;
 }

@@ -1,13 +1,10 @@
-
+///////////////////////////////////////
 // homePage sectionOne home
-
 //header
 header#home{
     background: url("../../assets/homeImage1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    position: relative;
     h1{
         font-size: 3.8rem;//62px 
         letter-spacing: 0.4rem;//6.7px
@@ -15,8 +12,6 @@ header#home{
         text-transform: lowercase;
         color: $headerColor;
         margin: 25% 0 0 30%;
-        z-index: 999;
-        border: 1px dotted #fff;//tbd
         span{
             font-family: $secondaryFont;
             font-size: 6.9rem;//111.2PX
@@ -28,14 +23,7 @@ header#home{
     }//h1
 }//header#home
 
-.headerBox{
-    position: absolute;
-    top: 35%;
-    left: 0;
-    width: 48%;
-    z-index: 99;
-}//headerBox
-
+///////////////////////////////////////
 //homePage  main starts
 //homePage  sectionTwo visitGuyanaText
 .visitGuyana{
@@ -53,6 +41,7 @@ header#home{
     }//wrapper
 }//visitGuyana
 
+///////////////////////////////////////
 // homePage  sectionThree houseGallary
 .houseGallary { 
     padding: 8% 0;
@@ -65,20 +54,20 @@ header#home{
     }//wrapper
 }//houseGallary
 
+///////////////////////////////////////
 // homePage  sectionFour infoSection
 
 .infoSection{
+    background: $secondaryBackgroundColor;
     justify-content: space-between;
     margin: 8% auto;
     .infoColumn{
         width: 48%;
-        border: 1px solid red;
-    }
+    }//infoCard
     .card{
         display: flex;
         justify-content: space-between;
         .cardText{
-            border: 1px solid orange;
             width:85%;
         }//cardText
         .icon{
@@ -92,12 +81,63 @@ header#home{
             text-align: center;
             color: #ffffff;
             font-size: 1.5rem;//62px
-            margin-top: 30px;
+           
         }//icon
     }//card
 }//infoSection
 
+///////////////////////////////////////
 //homePage  sectionFive locationAndPlan 
+.locationAndPlan{
+    display: flex;
+    justify-content: space-between;
+    background: $primaryBackgroundColor;
+    padding: 8% 0;
+    .locationAndPlanColumn{
+        width:43%;
+        .locationAndPlanType{
+            padding: 32px 0;
+            width:75%;
+        }
+    }//locationAndPlanColumn
+    .location{
+        display: flex;
+        flex-direction: column;
+        
+       
+        .locationAndPlanType{
+            text-align: right;
+            align-self: flex-end;
+        }
+    }//location
+    .plan{
+        display: flex;
+        flex-direction: column-reverse;
+        .locationAndPlanType{
+            margin-bottom: 40px;
+        }//locationAndPlanType
+    }//plan
+}//locationAndPlan
 
+///////////////////////////////////////
+//homePage  sectionSix bannerSection
+.bannerSection{
+    background: url("/assets/bannerImage.jpg");
+    background-size: cover;
+    height: 40vh;
+}//bannerSection
 
-
+///////////////////////////////////////
+//homePage sectionSeven freeTripSection
+.freeTripSection{
+    background: $secondaryBackgroundColor;
+    .wrapper{
+        flex-direction: column;
+        text-align: center;
+        padding: 10%;
+        a{
+            align-self: center;
+            width: 300px;
+        }//a
+    }//wrapper
+}//freeTripSection

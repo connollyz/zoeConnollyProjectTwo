@@ -1,0 +1,84 @@
+.wrapper{
+    max-width: 1024px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}//wrapper
+
+// this wrapper should not be here -.-
+
+///////////////////////////////////////
+// blogPage sectionOne bloghome
+header#blogHome{
+    background: url("/assets/blogImage1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .blogBox{
+        width: 55%;
+        top: 65%;
+    }//blogBox
+}
+///////////////////////////////////////
+// blogPage  main starts
+.blogContent{
+    background: $secondaryBackgroundColor;
+}//blogContent
+
+
+///////////////
+//blogSection
+.blogSection{
+    width:55%; 
+    .blogStoryText{
+        padding: 35% 40px 40px 40px;
+        .date{
+            color: $secondaryColor;
+            span{
+                font-weight: 700;
+                font-style: italic;
+            }//span
+        }//date
+    }//blogStorytext
+}//blogSection
+
+///////////////
+//commentSection
+.commentSection{
+    padding: 40px;
+    h3{
+        font-family: $primaryFont;
+        font-weight: 900;
+        font-size: 1.5rem;
+    }//h3
+}//commentSection
+
+.post{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .userProfileImage{
+        width: 10%;
+    }//userProfileImage
+    .postText{
+        width: 85%;
+        .dateAndByUser{
+            color: $secondaryColor;
+            font-weight: 700;
+            margin: 0 0 2px 0;
+            line-height: 1rem;
+        }//dateAndByUser
+    }//postText
+}//post
+
+///////////////
+//aside
+aside{
+    width: 20%;
+    padding: 10px;
+    background: #ffffff;
+    h4{
+        font-family: $primaryFont;
+        color: $secondaryColor;
+    }//h4
+    
+}//aside
