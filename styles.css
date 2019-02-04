@@ -218,13 +218,16 @@ template {
 }
 
 html {
-  font-size: 125%;
+  font-size: 90%;
 }
 
 .wrapper {
   max-width: 1024px;
   width: 80%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 li {
@@ -234,6 +237,16 @@ li {
 a {
   text-decoration: none;
   color: #ffffff;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.boxShadow {
+  -webkit-box-shadow: -20px 20px #50e3c2;
+  box-shadow: -20px 20px #50e3c2;
 }
 
 h1 {
@@ -250,6 +263,7 @@ h2 {
   font-size: 2.2rem;
   line-height: 3.6rem;
   letter-spacing: 0.2rem;
+  color: #0c5f4c;
 }
 
 p {
@@ -282,11 +296,20 @@ nav a:hover {
   line-height: 2rem;
   letter-spacing: 0.06rem;
   text-align: center;
+  text-transform: uppercase;
   background: #063974;
+  padding: 5px 10px;
 }
 
 header {
   padding-top: 1px;
+}
+
+header .wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .skip {
@@ -372,26 +395,133 @@ header {
   align-self: center;
 }
 
+footer {
+  background: #000000;
+  padding: 5px 0;
+}
+
+footer p {
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
 header#home {
   background: url("../../assets/homeImage1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  position: relative;
 }
 
 header#home h1 {
-  font-size: 3.9;
+  font-size: 3.8rem;
   letter-spacing: 0.4rem;
-  line-height: 3.6rem;
+  line-height: 5.2rem;
   text-transform: lowercase;
   color: #0c5f4c;
+  margin: 25% 0 0 30%;
+  z-index: 999;
+  border: 1px dotted #fff;
 }
 
 header#home h1 span {
   font-family: "Playfair Display", serif;
-  font-size: 6.95rem;
+  font-size: 6.9rem;
   font-weight: 900i;
   letter-spacing: normal;
   text-transform: uppercase;
   color: #063974;
+}
+
+.headerBox {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 48%;
+  z-index: 99;
+}
+
+.visitGuyana {
+  background: #fafffe;
+}
+
+.visitGuyana .wrapper {
+  margin: 10% auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.visitGuyana .wrapper .visitGuyanaText {
+  width: 70%;
+}
+
+.visitGuyana .wrapper .visitGuyanaImage {
+  width: 20%;
+}
+
+.houseGallary {
+  padding: 8% 0;
+  background: #d2f9f1;
+}
+
+.houseGallary .wrapper {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.houseGallary .wrapper .gallaryImage {
+  width: 30%;
+}
+
+.infoSection {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8% auto;
+}
+
+.infoSection .infoColumn {
+  width: 48%;
+  border: 1px solid red;
+}
+
+.infoSection .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.infoSection .card .cardText {
+  border: 1px solid orange;
+  width: 85%;
+}
+
+.infoSection .card .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #50e3c2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-top: 30px;
 }

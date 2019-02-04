@@ -47,7 +47,9 @@
             <h1>Welcome to <span>Beachstay</span></h1>
             
             <!-- decrtive image -->
-            <div class="headerBox boxShadow"></div>
+            <div class="headerBox">
+                <img src="/assets/headerBox.jpg" alt="###">
+            </div>
         </div>
     </header>  
 
@@ -55,38 +57,39 @@
     <main id="mainContent">
 
         <!--homePage  sectionTwo visitGuyanaText ------------------------------------------------------>
-        <section class="visitGuyana wrapper">
+        <section class="visitGuyana">
+            <div class="wrapper">
+                <!-- visitGuyanaText -->
+                <div class="visitGuyanaText"> 
+                    <h2>Visit Guyana</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium fugiat a laborum quo, quidem non delectus deserunt quae quam facilis adipisci iste earum aperiam aut explicabo sit fugit dignissimos esse? Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="button" href="blog.html">Find out more</a>
+                </div>
 
-            <!-- visitGuyanaText -->
-            <div class="visitGuyanaText"> 
-                <h2>Visit Guyana</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium fugiat a laborum quo, quidem non delectus deserunt quae quam facilis adipisci iste earum aperiam aut explicabo sit fugit dignissimos esse? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum eaque harum dolorem rem deleniti atque tempore, molestiae libero, dolore culpa expedita pariatur. Perspiciatis velit minima minus iure. Quas, ipsum voluptatem.</p>
-                <a class="button" href="blog.html">Find out more</a>
-            </div>
-
-            <!-- visitGuyanaImage -->
-            <div class="visitGuyanaImage">
-                <img src="/assets/smallBox.jpg" alt="View looking out of the living room of a beach house at the beautful blue lake and mountain landscape. The living room relaxing and open with the sun streaming in the bay window.">
-            </div>
+                <!-- visitGuyanaImage -->
+                <div class="visitGuyanaImage boxShadow">
+                    <img src="/assets/smallBox.jpg" alt="View looking out of the living room of a beach house at the beautful blue lake and mountain landscape. The living room relaxing and open with the sun streaming in the bay window.">
+                </div>
+         </div>
         </section>
 
         <!--homePage  sectionThree houseGallary------------------------------------------------------->
         <section class="houseGallary">
             <div class="wrapper">
                 <!-- imageOne -->
-                <div>
+                <div class="gallaryImage">
                     <!-- add alt text -->
                     <img src="/assets/galleryImage1.jpg" alt="Outer view of a beach house on a beach with a beautiful lush forest in its surroundings.">
                 </div>
 
                 <!-- imageTwo -->
-                <div>
+                <div class="gallaryImage">
                     <!-- add alt text -->
                     <img src="/assets/galleryImage2.jpg" alt="View of the walkway leading up to the side of a beach house at dawn with beautiful plants lining the path.">
                 </div>
 
                 <!-- imageThree -->
-                <div>
+                <div class="gallaryImage">
                     <!-- add alt text -->
                     <img src="/assets/galleryImage3.jpg" alt="View of beach house from the beach with gorgeous palm trees in its surroundings.">
                 </div><!-- image ends -->
@@ -97,30 +100,50 @@
         <section class="infoSection wrapper">
 
             <!-- infoLeft-->
-            <div class="infoLeft">
+            <div class="infoColumn">
                 <!-- cardBeachHouse -->
                 <div class="card cardBeachHouse">
-                     <h2>Beach houses</h2>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus provident excepturi quae ullam illo mollitia exercitationem reiciendis soluta molestias, itaque quod, rem laudantium recusandae voluptas eius aliquam? Fuga, numquam ratione.</p>
+                    <div class="icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="cardText">
+                        <h2>Beach houses</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus provident excepturi quae ullam illo mollitia exercitationem reiciendis.</p>
+                    </div>
                 </div>
                 <!-- cardBlog -->
                 <div class="card cardBlog">
-                    <h2>Blog</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus provident excepturi quae ullam illomollitia exercitationem reiciendis soluta molestias, itaque quod, rem laudantium recusandae voluptas eius aliquam? Fuga, numquam ratione.</p>
+                    <div class="icon">
+                        <i class="far fa-file"></i>
+                    </div>
+                    <div class="cardText">
+                        <h2>Blog</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus provident excepturi quae ullam illomollitia exercitationem.</p>
+                    </div>
                 </div>
             </div><!-- infoLeft ends -->
 
             <!-- infoRight -->
-            <div class="infoRight">
+            <div class="infoColumn">
                 <!-- cardCommunity  -->
                 <div class="card cardCommunity">
-                    <h2>Community</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus provident excepturi quae ullamillo mollitia exercitatiTwom reiciendis soluta molestias, itaque quod, rem laudantium recusandaevoluptas eius aliquam? Fuga, numquam ratiTwo.</p>
+                    <div class="icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="cardText"> 
+                        <h2>Community</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus provident excepturi quae ullamillo mollitia exercitatiTwom reiciendis soluta.</p>
+                    </div>
                 </div>
                 <!-- getInTouchCard -->
                 <div class="card cardTouch">
-                    <h2>Get in Touch</h2>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus provident excepturi quae ullamillomollitia exercitatiTwom reiciendis soluta molestias, itaque quod, rem laudantium recusandaevoluptas eius aliquam? Fuga, numquam ratiTwo.</p>
+                    <div class="icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="cardText">
+                        <h2>Get in Touch</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus provident excepturi quae ullamillomollitia..</p>
+                    </div>
                 </div>
             </div><!-- infoRight ends --> 
         </section>

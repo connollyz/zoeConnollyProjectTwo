@@ -1,42 +1,48 @@
 //Global Styles 
 
+///////////////////////////////////////
 //basic type styles
 html{
-    font-size: 125%
-}
+    font-size: 90%;  // why do we use 125% when starting? and not 100% it makes the font sizes 25% bigger then thhe intended size when                         going off the px font size given. 
+}//html
 
 //basic layout styles
 .wrapper{
     max-width: 1024px;
     width: 80%;
     margin: 0 auto;
-}
+    display: flex;
+}//wrapper
 
 li{
     list-style: none;
-}
+}//li
 
 a{
     text-decoration: none;
     color: #ffffff;
+}//a
+
+img{
+    width:100%;
+    display: block;
 }
 
+.boxShadow{
+    box-shadow:  -20px 20px $primaryColor;
+}
+
+
+///////////////////////////////////////
 //basic font styles
-
-// Fonts for later use
-// 
-// font-family: 'Playfair Display', serif;
 //font px / 16 = rem (rounded)
-
-
-//h1 headings styles
 h1{
     font-family: $primaryFont;
     font-weight: 700;//bold
     font-size: 5.4rem;//87px
     line-height: 3.6rem;//58px
     letter-spacing: 0.6rem;//9px
-}
+}//h1
 
 h2{
     font-family: $primaryFont;
@@ -44,14 +50,15 @@ h2{
     font-size: 2.2rem;//62px
     line-height: 3.6rem;//58px
     letter-spacing: 0.2rem;//3.8px
-}
+    color: $headerColor;
+}//h2
 
 p{
     font-family: $primaryFont;
     font-size: 1.25rem;//20px
     line-height: 2rem;//32px
     letter-spacing: 0.12rem;//2px
-}
+}//p
 
 nav a{
     font-family: $primaryFont;
@@ -62,33 +69,35 @@ nav a{
     text-align: center;
     &:hover{
         color: $primaryColor
-    }
-
-
-}
+    }//hover
+}//nav a
 
 .logo a, .button{
     font-family: $secondaryFont;
     font-weight: 900i;//black italic
-}
-
-
+}//logo a button
 
 .button{
     font-size: 1.25rem;//20px
     line-height: 2rem;//32px
     letter-spacing: 0.06rem;//1px
     text-align: center;
+    text-transform: uppercase;
     background: $secondaryColor;
-}
+    padding: 5px 10px;
+}//button
 
 
+///////////////////////////////////////
 
 //header styles
-
 header{
     padding-top: 1px;
-}
+    .wrapper{
+        flex-direction: column;
+    }
+}//header
+
 .skip{
     position: absolute;
     left: -1000px;
@@ -99,9 +108,8 @@ header{
     padding: 5px;
     &:focus{
         left: 0;
-    }
-}
-
+    }//focus
+}//skip
 
 .navBar{
     display: flex;
@@ -134,3 +142,16 @@ header{
         }//li 
     }//nav
 }//navBar
+
+
+///////////////////////////////////////
+// footer styles
+footer{
+    background: #000000;
+    padding: 5px 0;
+    p{
+        text-align: center;
+        color: #ffffff;
+        margin: 0;
+    }//p
+}//footer
