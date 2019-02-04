@@ -14,14 +14,14 @@ header#ContactHome{
 }//contactArea
 
 .contactBox{
-    top: 75%;
+    top: 70%;
     width: 55%;
     background:#ffffff;
 }//contactBox
 
 .contactInformation{
     align-self: flex-end;
-    width:30%;
+    width:25%;
     margin: 8% 0;
     .pEmail{
         margin: 20px 0;
@@ -32,3 +32,16 @@ header#ContactHome{
     }//div p
 }//contactInformation
 
+.socialMediaLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    a{
+        color: $textColor;
+        font-size:  1.5rem;
+        &:hover{
+            color: $primaryColor;
+        }//hover
+    }//s
+}//socialMediaLinks

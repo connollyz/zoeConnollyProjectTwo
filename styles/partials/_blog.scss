@@ -77,15 +77,29 @@ header#blogHome{
 ///////////////
 //aside
 aside{
-    border: 1px solid red;//tbd
     width: 20%;
     padding: 10px;
     background: #ffffff;
-    height: 600px;
+    height: 550px;
     margin-top: 8%;
+    font-size: .9rem;
     h4{
         font-family: $primaryFont;
         color: $secondaryColor;
     }//h4
-    
+    p{
+        font-size: .9rem;
+        line-height: 1.4rem;
+    }
+    .sideBar ul{
+        padding: 0;
+         font-family: $primaryFont;
+        li::before{
+            content: "\2022";
+            color: $primaryColor;
+            display: inline-block; 
+            width: 5px;
+            margin-right: 10px;
+        }//li::before
+    }//sideBar ul
 }//aside

@@ -15,7 +15,7 @@ header{
 
 .headerBox{
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 0;
     width: 48%;
     z-index: 99;
@@ -40,7 +40,6 @@ header{
     flex-direction: row;
     margin: 5px 0;
     height: 65px;
-    border: 1px dotted #fff;
     .logo{
         @include flexGrow;
         a{
