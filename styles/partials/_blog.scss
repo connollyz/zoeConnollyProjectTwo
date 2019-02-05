@@ -9,9 +9,7 @@
 ///////////////////////////////////////
 // blogPage sectionOne bloghome
 header#blogHome{
-    background: url("/assets/blogImage1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include background(url("/assets/blogImage1.jpg"));
     .blogBox{
         width: 55%;
         top: 65%;
@@ -20,9 +18,8 @@ header#blogHome{
 ///////////////////////////////////////
 // blogPage  main starts
 .blogContent{
-    display: flex;
+    @include spaceBetween;
     flex-direction: row;
-    justify-content: space-between;
     background: $secondaryBackgroundColor;
 }//blogContent
 
@@ -49,14 +46,11 @@ header#blogHome{
     padding: 40px;
     width:100%;
     h3{
-        font-family: $primaryFont;
-        font-weight: 900;
-        font-size: 1.25rem;//25px
+        @include font ($primaryFont, 900, 1.25rem, "", "")
     }//h3
     .post{
-        display: flex;
+        @include spaceBetween;
         flex-direction: row;
-        justify-content: space-between;
         .userProfileImage{
             width: 10%;
         }//userProfileImage
@@ -97,7 +91,7 @@ aside{
     }//p
     .sideBar ul{
         padding: 0;
-         font-family: $primaryFont;
+        font-family: $primaryFont;
         li::before{
             content: "\2022";
             color: $primaryColor;

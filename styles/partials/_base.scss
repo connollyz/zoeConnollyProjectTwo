@@ -17,10 +17,29 @@ $secondaryBackgroundColor: #fafffe;
 @mixin flexGrow {
     display: flex;
     flex-grow: 1;
-}
+}//flexgrow
+
+@mixin spaceBetween {
+    display:flex;
+    justify-content: space-between; 
+}//spaceBetween
+
+//font styles
+@mixin font ($font, $weight, $size, $lHeight, $spaceing){
+    font-family: $font;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $lHeight;
+    letter-spacing: $spaceing;
+}//font
 
 
-
+//background setup
+@mixin background($url){
+    background: $url;
+    background-repeat: no-repeat;
+    background-size: cover;
+}//background
 
 
 

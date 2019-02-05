@@ -2,24 +2,17 @@
 // homePage sectionOne home
 //header
 header#home{
-    background: url("../../assets/homeImage1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include background(url("../../assets/homeImage1.jpg"));
     .wrapper{
         flex-direction: column;
     }
     h1{
-        font-size: 3.1rem;//62px 
-        letter-spacing: 0.33rem;//6.7px
-        line-height: 3.3rem;//66px
+        @include font("", "", 3.1rem, 3.3rem, 0.33rem);
         text-transform: lowercase;
         color: $headerColor;
         margin: 25% 0 0 30%;
         span{
-            font-family: $secondaryFont;
-            font-size: 5.5rem;//111.2PX
-            font-weight: 900i;//black italic
-            letter-spacing: normal;
+            @include font($secondaryFont, 900i, 5.5rem, "", normal);
             text-transform: uppercase;
             color: $secondaryColor;
         }//span
@@ -68,8 +61,7 @@ header#home{
         width: 48%;
     }//infoCard
     .card{
-        display: flex;
-        justify-content: space-between;
+        @include spaceBetween;
         .cardText{
             width: 85%;
         }//cardText
@@ -91,8 +83,7 @@ header#home{
 ///////////////////////////////////////
 //homePage  sectionFive locationAndPlan 
 .locationAndPlan{
-    display: flex;
-    justify-content: space-between;
+    @include spaceBetween;
     background: $primaryBackgroundColor;
     padding: 8% 0;
     .locationAndPlanColumn{

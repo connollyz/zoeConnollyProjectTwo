@@ -1,9 +1,7 @@
 ///////////////////////////////////////
 // blogPage sectionOne bloghome
 header#ContactHome{
-    background: url("/assets/contactImage1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; 
+    @include background (url("/assets/contactImage1.jpg"));
 }//header#ContactHome
 
 // contactPage  main starts
@@ -33,9 +31,8 @@ header#ContactHome{
 }//contactInformation
 
 .socialMediaLinks{
-    display: flex;
+    @include spaceBetween;
     flex-direction: row;
-    justify-content: space-between;
     width: 50%;
     a{
         color: $textColor;
