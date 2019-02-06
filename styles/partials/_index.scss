@@ -3,7 +3,7 @@
 
 header.home{
     position: relative;
-    @include background(url("../../assets/homeImage1.jpg"));
+    @include background(url("assets/homeImage1.jpg"));
     .wrapper{
         flex-direction: column;
     }
@@ -128,7 +128,7 @@ header.home{
 //homePage  sectionSix bannerSection
 
 .bannerSection{
-    background: url("/assets/bannerImage.jpg");
+    background: url("assets/bannerImage.jpg");
     background-size: cover;
     height: 40vh;
 }//bannerSection

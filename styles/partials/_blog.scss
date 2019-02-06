@@ -10,7 +10,7 @@
 // blogPage sectionOne bloghome
 
 header.blogHome{
-    @include background(url("/assets/blogImage1.jpg"));
+    @include background(url("assets/blogImage1.jpg"));
     .blogBox{
         width: 55%;
         top: 40%;
