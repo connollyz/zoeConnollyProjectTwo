@@ -577,7 +577,7 @@ header.home h1 span {
 }
 
 .visitGuyana .wrapper {
-  margin: 10% auto;
+  padding: 20% 0 10% 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1139,6 +1139,7 @@ header.contactHome {
     align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    padding: 10% 0;
   }
   .visitGuyana .wrapper .visitGuyanaText {
     margin-top: 5%;
