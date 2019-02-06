@@ -10,7 +10,7 @@ header{
     }//wrapper
     h1{
         position: relative;
-        top: 70%;
+        top: 140px;
         z-index: 999;
     }//h1
 }//header
@@ -53,7 +53,8 @@ header{
     }//logo
 }//navBar
 
-nav{
+    
+ nav{
     @include flexGrow;
     ul{
         @include flexGrow;
@@ -68,3 +69,11 @@ nav{
         }//a
     }//li 
 }//nav
+
+.hamburgerMenu{
+    display: none;
+}
+
+.toggle{
+    display: none;
+}

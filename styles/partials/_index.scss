@@ -10,11 +10,13 @@ header.home{
     h1{
         position: relative;
         align-self: center;
-        @include font($primaryFont, "", 3.1rem, 3.3rem, 0.33rem);
+        top: 250px;
+        left: 150px;
+        @include font($primaryFont, "", 2.5rem, 3.3rem, 0.33rem);
         text-transform: lowercase;
         color: $headerColor;
         span{
-            @include font($secondaryFont, 900i, 5.5rem, "", normal);
+            @include font($secondaryFont, 900i, 4rem, "", normal);
             text-transform: uppercase;
             color: $secondaryColor;
             display: block;

@@ -41,7 +41,7 @@ img{
 //basic font styles
 //font px / 20 = rem 
 h1{
-    @include font($primaryFont, 700, 4.35rem , 2.9rem, 0.45rem);
+    @include font($primaryFont, 700, 3rem , 2.9rem, 0.45rem);
     color: #ffffff;
 }//h1
 

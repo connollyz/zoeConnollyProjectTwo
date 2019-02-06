@@ -6,7 +6,7 @@
 
     .blogBox{
         display:none;
-    }
+    }//blogBox
  
     .blogContent{
         display: flex;
@@ -70,7 +70,7 @@
         width: 100%;
         padding: 40px;
         height: 300px;
-        margin-top: 10px;
+        margin: 10px 0 50px 0;
         .sideBar{
             display: flex;
             flex-wrap: wrap;
@@ -81,7 +81,7 @@
             .sideBarText{
                 flex-grow: 1;
             }//side
-        }
+        }//sideBar
     }//aside
 
     .boxShadowRight{
