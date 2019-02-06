@@ -1,23 +1,26 @@
 ///////////////////////////////////////
 // homePage sectionOne home
 //header
-header#home{
+header.home{
+    position: relative;
     @include background(url("../../assets/homeImage1.jpg"));
     .wrapper{
         flex-direction: column;
     }
     h1{
-        @include font("", "", 3.1rem, 3.3rem, 0.33rem);
+        position: relative;
+        align-self: center;
+        @include font($primaryFont, "", 3.1rem, 3.3rem, 0.33rem);
         text-transform: lowercase;
         color: $headerColor;
-        margin: 25% 0 0 30%;
         span{
             @include font($secondaryFont, 900i, 5.5rem, "", normal);
             text-transform: uppercase;
             color: $secondaryColor;
+            display: block;
         }//span
     }//h1
-}//header#home
+}//header.home
 
 ///////////////////////////////////////
 //homePage  main starts
@@ -55,10 +58,16 @@ header#home{
 
 .infoSection{
     background: $secondaryBackgroundColor;
+    display: flex;
     justify-content: space-between;
     margin: 8% auto;
+    
+}//infoSection
+
+.infoSection .wrapper{
+    flex-wrap: wrap;
     .infoColumn{
-        width: 48%;
+         width: 48%;
     }//infoCard
     .card{
         @include spaceBetween;
@@ -76,9 +85,10 @@ header#home{
             text-align: center;
             color: #ffffff;
             font-size: 1.5rem;//30px
+            margin-top: 10px;
         }//icon
     }//card
-}//infoSection
+}//wrapper
 
 ///////////////////////////////////////
 //homePage  sectionFive locationAndPlan 

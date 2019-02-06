@@ -8,11 +8,11 @@
 
 ///////////////////////////////////////
 // blogPage sectionOne bloghome
-header#blogHome{
+header.blogHome{
     @include background(url("/assets/blogImage1.jpg"));
     .blogBox{
         width: 55%;
-        top: 65%;
+        top: 40%;
     }//blogBox
 }
 ///////////////////////////////////////
@@ -30,15 +30,16 @@ header#blogHome{
     width: 55%;
     .blogStoryText{
         padding: 35% 40px 40px 40px;
-        .date{
-            color: $secondaryColor;
-            span{
-                font-weight: 700;
-                font-style: italic;
-            }//span
-        }//date
     }//blogStorytext
 }//blogSection
+
+.date{
+    color: $secondaryColor;
+    span{
+        font-weight: 700;
+        font-style: italic;
+    }//span
+}//date
 
 ///////////////
 //commentSection

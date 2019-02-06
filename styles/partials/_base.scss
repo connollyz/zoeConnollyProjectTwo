@@ -38,7 +38,6 @@ $secondaryBackgroundColor: #fafffe;
 @mixin background($url){
     background: $url;
     background-repeat: no-repeat;
-    background-size: cover;
 }//background
 
 

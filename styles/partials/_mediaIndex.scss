@@ -1,0 +1,204 @@
+
+
+
+@media(max-width:1095px){
+///////////////////////////////////////
+// homePage sectionOne home
+//header
+
+
+///////////////////////////////////////
+//homePage  main starts
+//homePage  sectionTwo visitGuyanaText
+.visitGuyana{
+    .wrapper{
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        .visitGuyanaText{
+            margin-top: 5%;
+            text-align: center;
+            width: 100%;
+        }//visitGuyanatext
+        .visitGuyanaImage{
+            width: 80%;
+        }//visitGuyanaImage
+    }//wrapper
+}//visitGuyana
+
+
+//////////////////////////////////////
+// homePage  sectionFour infoSection
+
+.infoSection{
+    .wrapper{
+        .infoColumn{
+            width: 100%;
+        }//infoCard
+        .card{
+            @include spaceBetween;
+            .cardText{
+                width: 90%;
+            }//cardText
+            .icon{
+                margin-top: 55px;
+            }//icon
+        }//card
+    }//wrapper
+}//infoSection
+
+
+///////////////////////////////////////
+//homePage  sectionFive locationAndPlan 
+.locationAndPlan{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8% 0 4% 0;
+    .locationAndPlanColumn{
+        width:100%;
+    }//locationAndPlanColumn
+    .locationAndPlanImage{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .location{
+        display: flex;
+        .locationAndPlanType{
+            margin-top: 40px;
+            text-align: center;
+            align-self: center;
+        }//locationAndPlanType
+    }//location
+    .plan{
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        .locationAndPlanType{
+            text-align: center;
+            align-self: center;
+            margin-top: 40px;
+        }//locationAndPlanType
+    }//plan
+}//locationAndPlan
+
+///////////////////////////////////////
+//homePage sectionSeven freeTripSection
+.freeTripSection{
+    .wrapper{
+        flex-direction: column;
+        text-align: center;
+    }//wrapper
+}//freeTripSection
+}
+
+//@700 fix header h1
+@media(max-width:700px){
+
+
+header{
+    height: 100vh;
+    position: relative;
+    padding-top: 1px; 
+    background-size: 900px;
+    .wrapper{
+        flex-direction: row;
+    }//wrapper
+    h1{
+        position: relative;
+        top: 60%;
+        z-index: 999;
+    }//h1
+}//header.home
+
+//////////////////////////////////////
+// homePage  sectionFour infoSection
+
+.infoSection{
+    .wrapper{
+        .infoColumn{
+            width: 100%;
+        }//infoCard
+        .card{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .cardText{
+                align-self: center;
+                text-align: center;
+                width: 100%;
+            }//cardText
+            .icon{
+                margin-top: 55px;
+                align-self: center;
+            }//icon
+        }//card
+    }//wrapper
+}//infoSection
+
+
+///////////////////////////////////////
+//homePage  sectionFive locationAndPlan 
+.locationAndPlan{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8% 0 4% 0;
+    .locationAndPlanColumn{
+        width:100%;
+    }//locationAndPlanColumn
+    .locationAndPlanImage{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .location{
+        display: flex;
+        .locationAndPlanType{
+            margin-top: 40px;
+            text-align: center;
+            align-self: center;
+        }//locationAndPlanType
+    }//location
+    .plan{
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        .locationAndPlanType{
+            text-align: center;
+            align-self: center;
+            margin-top: 40px;
+        }//locationAndPlanType
+    }//plan
+}//locationAndPlan
+
+///////////////////////////////////////
+//homePage sectionSeven freeTripSection
+.freeTripSection{
+    .wrapper{
+        flex-direction: column;
+        text-align: center;
+    }//wrapper
+}//freeTripSection
+
+
+
+}
+@media(max-width:400px){
+///////////////////////////////////////
+// homePage  sectionThree houseGallary
+.houseGallary { 
+    padding: 8% 0;
+    background: $primaryBackgroundColor;
+    .wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+       
+        .gallaryImage{ 
+            margin: 10px auto;
+            width: 90%;
+        }//gallaryImage
+    }//wrapper
+}//houseGallary
+
+}

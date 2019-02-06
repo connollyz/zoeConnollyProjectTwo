@@ -300,8 +300,12 @@ nav a:hover {
   font-weight: 900i;
 }
 
+.logo a:focus, .button:focus {
+  border: 2px dotted #ffffff;
+}
+
 .button {
-  font-family: "";
+  font-family: "Playfair Display", serif;
   font-weight: "";
   font-size: 1rem;
   line-height: 1.6rem;
@@ -321,6 +325,7 @@ header {
   height: 100vh;
   position: relative;
   padding-top: 1px;
+  background-size: 900px;
 }
 
 header .wrapper {
@@ -331,7 +336,8 @@ header .wrapper {
 }
 
 header h1 {
-  margin-top: 30%;
+  position: relative;
+  top: 60%;
   z-index: 999;
 }
 
@@ -387,7 +393,7 @@ header h1 {
   align-self: center;
 }
 
-.navBar nav {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,7 +402,7 @@ header h1 {
   flex-grow: 1;
 }
 
-.navBar nav ul {
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,18 +411,17 @@ header h1 {
   flex-grow: 1;
 }
 
-.navBar nav li {
+nav li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  display: inline-block;
   text-align: center;
 }
 
-.navBar nav li a {
+nav li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,33 +522,37 @@ footer .wrapper {
 footer .wrapper p {
   color: #ffffff;
   margin: 0;
+  font-size: 1rem;
 }
 
-header#home {
+header.home {
+  position: relative;
   background: url("../../assets/homeImage1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
-header#home .wrapper {
+header.home .wrapper {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
 }
 
-header#home h1 {
-  font-family: "";
+header.home h1 {
+  position: relative;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  font-family: "Lato", sans-serif;
   font-weight: "";
   font-size: 3.1rem;
   line-height: 3.3rem;
   letter-spacing: 0.33rem;
   text-transform: lowercase;
   color: #0c5f4c;
-  margin: 25% 0 0 30%;
 }
 
-header#home h1 span {
+header.home h1 span {
   font-family: "Playfair Display", serif;
   font-weight: 900i;
   font-size: 5.5rem;
@@ -551,6 +560,7 @@ header#home h1 span {
   letter-spacing: normal;
   text-transform: uppercase;
   color: #063974;
+  display: block;
 }
 
 .visitGuyana {
@@ -592,17 +602,25 @@ header#home h1 span {
 
 .infoSection {
   background: #fafffe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 8% auto;
 }
 
-.infoSection .infoColumn {
+.infoSection .wrapper {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.infoSection .wrapper .infoColumn {
   width: 48%;
 }
 
-.infoSection .card {
+.infoSection .wrapper .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -611,11 +629,11 @@ header#home h1 span {
   justify-content: space-between;
 }
 
-.infoSection .card .cardText {
+.infoSection .wrapper .card .cardText {
   width: 85%;
 }
 
-.infoSection .card .icon {
+.infoSection .wrapper .card .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -633,6 +651,7 @@ header#home h1 span {
   text-align: center;
   color: #ffffff;
   font-size: 1.5rem;
+  margin-top: 10px;
 }
 
 .locationAndPlan {
@@ -721,15 +740,14 @@ header#home h1 span {
   display: flex;
 }
 
-header#blogHome {
+header.blogHome {
   background: url("/assets/blogImage1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
-header#blogHome .blogBox {
+header.blogHome .blogBox {
   width: 55%;
-  top: 65%;
+  top: 40%;
 }
 
 .blogContent {
@@ -754,11 +772,11 @@ header#blogHome .blogBox {
   padding: 35% 40px 40px 40px;
 }
 
-.blogSection .blogStoryText .date {
+.date {
   color: #063974;
 }
 
-.blogSection .blogStoryText .date span {
+.date span {
   font-weight: 700;
   font-style: italic;
 }
@@ -841,10 +859,9 @@ aside .sideBar ul li::before {
   margin-right: 10px;
 }
 
-header#ContactHome {
+header.contactHome {
   background: url("/assets/contactImage1.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .contactArea {
@@ -859,7 +876,7 @@ header#ContactHome {
 }
 
 .contactBox {
-  top: 70%;
+  top: 40%;
   width: 55%;
   background: #ffffff;
 }
@@ -901,4 +918,438 @@ header#ContactHome {
 
 .socialMediaLinks a:hover {
   color: #50e3c2;
+}
+
+@media (max-width: 1095px) {
+  .wrapper {
+    width: 90%;
+  }
+  .boxShadow {
+    -webkit-box-shadow: -10px 10px #50e3c2;
+    box-shadow: -10px 10px #50e3c2;
+  }
+  .boxShadowRight {
+    -webkit-box-shadow: 10px 10px #50e3c2;
+    box-shadow: 10px 10px #50e3c2;
+  }
+  h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: "";
+    letter-spacing: 0.3rem;
+  }
+  h2 {
+    margin-top: 8%;
+    letter-spacing: .05rem;
+    line-height: 1.6rem;
+  }
+  p {
+    font-family: "Lato", sans-serif;
+    font-weight: "";
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.1rem;
+    margin: 10px 0 30px 0;
+  }
+  .button {
+    font-family: "Playfair Display", serif;
+    font-weight: "";
+    font-size: 0.9rem;
+    line-height: "";
+    letter-spacing: "";
+    padding: 7px 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  h2 {
+    margin: 8% 0 9% 0;
+    letter-spacing: .05rem;
+    line-height: 1.6rem;
+  }
+  .boxShadow {
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+  }
+  .boxShadowRight {
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+  }
+}
+
+@media (max-width: 1095px) {
+  header .wrapper h1 {
+    top: 10px;
+  }
+  .headerBox {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .navBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 5px 0;
+    height: 65px;
+  }
+  .navBar .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+  .navBar .logo a {
+    color: #50e3c2;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+  nav {
+    width: 100px;
+  }
+  nav ul {
+    border: 1px solid red;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  nav li {
+    border: 1px solid red;
+    width: 100px;
+  }
+  nav li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+}
+
+@media (max-width: 1095px) {
+  .visitGuyana .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .visitGuyana .wrapper .visitGuyanaText {
+    margin-top: 5%;
+    text-align: center;
+    width: 100%;
+  }
+  .visitGuyana .wrapper .visitGuyanaImage {
+    width: 80%;
+  }
+  .infoSection .wrapper .infoColumn {
+    width: 100%;
+  }
+  .infoSection .wrapper .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .infoSection .wrapper .card .cardText {
+    width: 90%;
+  }
+  .infoSection .wrapper .card .icon {
+    margin-top: 55px;
+  }
+  .locationAndPlan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 8% 0 4% 0;
+  }
+  .locationAndPlan .locationAndPlanColumn {
+    width: 100%;
+  }
+  .locationAndPlan .locationAndPlanImage {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .locationAndPlan .location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .locationAndPlan .location .locationAndPlanType {
+    margin-top: 40px;
+    text-align: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+  .locationAndPlan .plan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .locationAndPlan .plan .locationAndPlanType {
+    text-align: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin-top: 40px;
+  }
+  .freeTripSection .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    height: 100vh;
+    position: relative;
+    padding-top: 1px;
+    background-size: 900px;
+  }
+  header .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  header h1 {
+    position: relative;
+    top: 60%;
+    z-index: 999;
+  }
+  .infoSection .wrapper .infoColumn {
+    width: 100%;
+  }
+  .infoSection .wrapper .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .infoSection .wrapper .card .cardText {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+  }
+  .infoSection .wrapper .card .icon {
+    margin-top: 55px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+  .locationAndPlan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 8% 0 4% 0;
+  }
+  .locationAndPlan .locationAndPlanColumn {
+    width: 100%;
+  }
+  .locationAndPlan .locationAndPlanImage {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .locationAndPlan .location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .locationAndPlan .location .locationAndPlanType {
+    margin-top: 40px;
+    text-align: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+  .locationAndPlan .plan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .locationAndPlan .plan .locationAndPlanType {
+    text-align: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin-top: 40px;
+  }
+  .freeTripSection .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .houseGallary {
+    padding: 8% 0;
+    background: #d2f9f1;
+  }
+  .houseGallary .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .houseGallary .wrapper .gallaryImage {
+    margin: 10px auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 1095px) {
+  .blogContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .blogSection {
+    width: 100%;
+  }
+  .blogSection .blogStoryText {
+    padding: 0 40px;
+  }
+  .date {
+    color: #063974;
+  }
+  .date span {
+    font-weight: 700;
+    font-style: italic;
+  }
+  .blogSection.commentSection {
+    padding: 40px;
+    width: 100%;
+  }
+  .blogSection.commentSection h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-size: 1.25rem;
+    line-height: "";
+    letter-spacing: "";
+  }
+  .blogSection.commentSection .post {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    border-bottom: 2px solid #50e3c2;
+  }
+  .blogSection.commentSection .post .userProfileImage {
+    width: 15%;
+    -webkit-box-shadow: 3px 3px #50e3c2;
+    box-shadow: 3px 3px #50e3c2;
+  }
+  .blogSection.commentSection .post .postText {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .blogSection.commentSection .post .postText .dateAndByUser {
+    color: #063974;
+    font-weight: 700;
+    margin: 0 0 2px 0;
+    line-height: 1rem;
+  }
+  aside {
+    width: 100%;
+    padding: 40px;
+    height: 300px;
+    margin-top: 10px;
+  }
+  aside .sideBar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  aside .sideBar .sideBarImage {
+    display: none;
+  }
+  aside .sideBar .sideBarText {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+  .boxShadowRight {
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+  }
 }
