@@ -1,9 +1,11 @@
 ///////////////////////////////////////
 // contactPage sectionOne contactHome
+
 header.contactHome{
     @include background (url("/assets/contactImage1.jpg"));
 }//header#ContactHome
 
+///////////////////////////////////////
 // contactPage  main starts
 .contactArea{
     display:flex;
@@ -16,6 +18,9 @@ header.contactHome{
     width: 55%;
     background:#ffffff;
 }//contactBox
+
+/////////////////////////////////////////
+//contactInformation
 
 .contactInformation{
     align-self: flex-end;

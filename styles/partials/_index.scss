@@ -1,6 +1,6 @@
 ///////////////////////////////////////
-// homePage sectionOne home
-//header
+// homePage sectionOne home header
+
 header.home{
     position: relative;
     @include background(url("../../assets/homeImage1.jpg"));
@@ -26,6 +26,7 @@ header.home{
 ///////////////////////////////////////
 //homePage  main starts
 //homePage  sectionTwo visitGuyanaText
+
 .visitGuyana{
     background: $secondaryBackgroundColor;
     .wrapper{
@@ -43,6 +44,7 @@ header.home{
 
 ///////////////////////////////////////
 // homePage  sectionThree houseGallary
+
 .houseGallary { 
     padding: 8% 0;
     background: $primaryBackgroundColor;
@@ -62,13 +64,12 @@ header.home{
     display: flex;
     justify-content: space-between;
     margin: 8% auto;
-    
 }//infoSection
 
 .infoSection .wrapper{
     flex-wrap: wrap;
     .infoColumn{
-         width: 48%;
+        width: 48%;
     }//infoCard
     .card{
         @include spaceBetween;
@@ -93,6 +94,7 @@ header.home{
 
 ///////////////////////////////////////
 //homePage  sectionFive locationAndPlan 
+
 .locationAndPlan{
     @include spaceBetween;
     background: $primaryBackgroundColor;
@@ -102,18 +104,16 @@ header.home{
         .locationAndPlanType{
             padding: 32px 0;
             width: 75%;
-        }
+        }//locationAndPlanType
     }//locationAndPlanColumn
     .location{
         display: flex;
         flex-direction: column;
-        
-       
         .locationAndPlanType{
             margin-top: 40px;
             text-align: right;
             align-self: flex-end;
-        }
+        }//locationAndPlanType
     }//location
     .plan{
         display: flex;
@@ -126,6 +126,7 @@ header.home{
 
 ///////////////////////////////////////
 //homePage  sectionSix bannerSection
+
 .bannerSection{
     background: url("/assets/bannerImage.jpg");
     background-size: cover;
@@ -134,6 +135,7 @@ header.home{
 
 ///////////////////////////////////////
 //homePage sectionSeven freeTripSection
+
 .freeTripSection{
     background: $secondaryBackgroundColor;
     .wrapper{

@@ -1,4 +1,5 @@
-// varibles go here
+///////////////////////////
+// Varibles go here
 
 //fonts
 $primaryFont:'Lato', sans-serif;
@@ -13,12 +14,17 @@ $primaryBackgroundColor: #d2f9f1;
 $secondaryBackgroundColor: #fafffe;
 
 
-// mix ins go here
+///////////////////////////
+// Mixins go here
+
+//flex grow style
 @mixin flexGrow {
     display: flex;
     flex-grow: 1;
 }//flexgrow
 
+
+//spacebetween style
 @mixin spaceBetween {
     display:flex;
     justify-content: space-between; 
@@ -34,7 +40,7 @@ $secondaryBackgroundColor: #fafffe;
 }//font
 
 
-//background setup
+//background styles
 @mixin background($url){
     background: $url;
     background-repeat: no-repeat;

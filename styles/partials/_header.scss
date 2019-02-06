@@ -1,4 +1,5 @@
 ///////////////////////////////////////
+//header
 
 header{
     height: 100vh;
@@ -15,6 +16,8 @@ header{
     }//h1
 }//header
 
+
+//header image box
 .headerBox{
     position: absolute;
     top: 30%;
@@ -23,7 +26,8 @@ header{
     z-index: 99;
 }//headerBox
 
-
+///////////////////////////////////////
+//skip button
 .skip{
     position: absolute;
     left: -1000px;
@@ -36,6 +40,10 @@ header{
         left: 0;
     }//focus
 }//skip
+
+
+///////////////////////////////////////
+//navbar 
 
 .navBar{
     display: flex;
@@ -52,8 +60,7 @@ header{
         }//logo a
     }//logo
 }//navBar
-
-    
+ 
  nav{
     @include flexGrow;
     ul{
@@ -70,10 +77,12 @@ header{
     }//li 
 }//nav
 
+///////////////////////////////////////
+//hamburgerMenu
 .hamburgerMenu{
     display: none;
-}
+}//hamburgerMenu
 
 .toggle{
     display: none;
-}
+}//toggle

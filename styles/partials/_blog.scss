@@ -8,24 +8,27 @@
 
 ///////////////////////////////////////
 // blogPage sectionOne bloghome
+
 header.blogHome{
     @include background(url("/assets/blogImage1.jpg"));
     .blogBox{
         width: 55%;
         top: 40%;
     }//blogBox
-}
+}//header .blogHome
+
 ///////////////////////////////////////
 // blogPage  main starts
+
 .blogContent{
     @include spaceBetween;
     flex-direction: row;
     background: $secondaryBackgroundColor;
 }//blogContent
 
-
-///////////////
+///////////////////////////////////////
 //blogSection
+
 .blogSection{
     width: 55%;
     .blogStoryText{
@@ -41,35 +44,35 @@ header.blogHome{
     }//span
 }//date
 
-///////////////
+///////////////////////////////////////
 //commentSection
+
 .blogSection.commentSection{
     padding: 40px;
     width:100%;
     h3{
         @include font ($primaryFont, 900, 1.25rem, "", "")
     }//h3
-    .post{
-        @include spaceBetween;
-        flex-direction: row;
-        .userProfileImage{
-            width: 10%;
-        }//userProfileImage
-        .postText{
-            width: 85%;
-            .dateAndByUser{
-                color: $secondaryColor;
-                font-weight: 700;
-                margin: 0 0 2px 0;
-                line-height: .8rem;//16px
-            }//dateAndByUser
-        }//postText
-    }//post
 }//commentSection
 
+.post{
+    @include spaceBetween;
+    flex-direction: row;
+    .userProfileImage{
+        width: 10%;
+    }//userProfileImage
+    .postText{
+        width: 85%;
+        .dateAndByUser{
+            color: $secondaryColor;
+            font-weight: 700;
+            margin: 0 0 2px 0;
+            line-height: .8rem;//16px
+        }//dateAndByUser
+    }//postText
+}//post
 
-
-///////////////
+///////////////////////////////////////
 //aside
 aside{
     width: 20%;

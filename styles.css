@@ -453,7 +453,6 @@ form {
   grid-gap: 20px 40px;
 }
 
-/* visuallyHidden is code we used in class to hide the lable */
 .visuallyHidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -805,7 +804,7 @@ header.blogHome .blogBox {
   letter-spacing: "";
 }
 
-.blogSection.commentSection .post {
+.post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -818,15 +817,15 @@ header.blogHome .blogBox {
   flex-direction: row;
 }
 
-.blogSection.commentSection .post .userProfileImage {
+.post .userProfileImage {
   width: 10%;
 }
 
-.blogSection.commentSection .post .postText {
+.post .postText {
   width: 85%;
 }
 
-.blogSection.commentSection .post .postText .dateAndByUser {
+.post .postText .dateAndByUser {
   color: #063974;
   font-weight: 700;
   margin: 0 0 2px 0;
@@ -936,14 +935,6 @@ header.contactHome {
   .wrapper {
     width: 90%;
   }
-  .boxShadow {
-    -webkit-box-shadow: -10px 10px #50e3c2;
-    box-shadow: -10px 10px #50e3c2;
-  }
-  .boxShadowRight {
-    -webkit-box-shadow: 10px 10px #50e3c2;
-    box-shadow: 10px 10px #50e3c2;
-  }
   h1 {
     font-family: "Lato", sans-serif;
     font-weight: 700;
@@ -971,6 +962,14 @@ header.contactHome {
     line-height: "";
     letter-spacing: "";
     padding: 7px 12px;
+  }
+  .boxShadow {
+    -webkit-box-shadow: -10px 10px #50e3c2;
+    box-shadow: -10px 10px #50e3c2;
+  }
+  .boxShadowRight {
+    -webkit-box-shadow: 10px 10px #50e3c2;
+    box-shadow: 10px 10px #50e3c2;
   }
 }
 
@@ -1002,7 +1001,6 @@ header.contactHome {
     font-size: 3rem;
   }
   .navBar {
-    border: 1px solid blue;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1016,9 +1014,6 @@ header.contactHome {
     margin: 5px auto;
     height: 65px;
     z-index: 9999;
-  }
-  .navBar .logo {
-    border: 1px solid orange;
   }
   .navBar .logo a {
     color: #50e3c2;
@@ -1035,16 +1030,12 @@ header.contactHome {
     right: 0;
   }
   nav ul {
-    border: 1px solid red;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 0;
     margin: 0;
-  }
-  nav li {
-    border: 1px solid red;
   }
   nav li a {
     display: -webkit-box;
@@ -1160,7 +1151,7 @@ header.contactHome {
   .infoSection .wrapper .infoColumn {
     width: 100%;
   }
-  .infoSection .wrapper .card {
+  .infoSection .wrapper .infoColumn .card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1168,10 +1159,10 @@ header.contactHome {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-  .infoSection .wrapper .card .cardText {
+  .infoSection .wrapper .infoColumn .card .cardText {
     width: 90%;
   }
-  .infoSection .wrapper .card .icon {
+  .infoSection .wrapper .infoColumn .card .icon {
     margin-top: 55px;
   }
   .locationAndPlan {
@@ -1264,7 +1255,7 @@ header.contactHome {
   .infoSection .wrapper .infoColumn {
     width: 100%;
   }
-  .infoSection .wrapper .card {
+  .infoSection .wrapper .infoColumn .card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1275,14 +1266,14 @@ header.contactHome {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  .infoSection .wrapper .card .cardText {
+  .infoSection .wrapper .infoColumn .card .cardText {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
     text-align: center;
     width: 100%;
   }
-  .infoSection .wrapper .card .icon {
+  .infoSection .wrapper .infoColumn .card .icon {
     margin-top: 55px;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
@@ -1413,7 +1404,7 @@ header.contactHome {
     line-height: "";
     letter-spacing: "";
   }
-  .blogSection.commentSection .post {
+  .post {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1426,16 +1417,16 @@ header.contactHome {
     margin: 30px 0;
     border-bottom: 2px solid #50e3c2;
   }
-  .blogSection.commentSection .post .userProfileImage {
+  .post .userProfileImage {
     width: 15%;
     -webkit-box-shadow: 3px 3px #50e3c2;
     box-shadow: 3px 3px #50e3c2;
   }
-  .blogSection.commentSection .post .postText {
+  .post .postText {
     margin-top: 20px;
     width: 100%;
   }
-  .blogSection.commentSection .post .postText .dateAndByUser {
+  .post .postText .dateAndByUser {
     color: #063974;
     font-weight: 700;
     margin: 0 0 2px 0;
@@ -1483,12 +1474,10 @@ header.contactHome {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    border: 1px solid red;
   }
   .contactBox {
     top: 500px;
     width: 100%;
-    border: 1px solid red;
   }
   .contactInformation {
     text-align: center;

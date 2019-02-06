@@ -1,130 +1,132 @@
-
-
+///////////////////////////////////////
+//desktop - tablet
 
 @media(max-width:1095px){
-///////////////////////////////////////
-// homePage sectionOne home
-//header
-.headerBoxIndex{
-    display: none;
-}
 
-///////////////////////////////////////
-//homePage  main starts
-//homePage  sectionTwo visitGuyanaText
-.visitGuyana{
-    .wrapper{
-        flex-direction: column-reverse;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: wrap;
-        .visitGuyanaText{
-            margin-top: 5%;
-            text-align: center;
-            width: 100%;
-        }//visitGuyanatext
-        .visitGuyanaImage{
-            width: 80%;
-        }//visitGuyanaImage
-    }//wrapper
-}//visitGuyana
+    ///////////////////////////////////////
+    // homePage sectionOne header
+
+    .headerBoxIndex{
+        display: none;
+    }//headerBoxIndex
+
+    ///////////////////////////////////////
+    //homePage main starts sectionTwo visitGuyanaText
+    .visitGuyana{
+        .wrapper{
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            .visitGuyanaText{
+                margin-top: 5%;
+                text-align: center;
+                width: 100%;
+            }//visitGuyanatext
+            .visitGuyanaImage{
+                width: 80%;
+            }//visitGuyanaImage
+        }//wrapper
+    }//visitGuyana
 
 
-//////////////////////////////////////
-// homePage  sectionFour infoSection
+    //////////////////////////////////////
+    // homePage  sectionFour infoSection
 
-.infoSection{
-    .wrapper{
-        .infoColumn{
-            width: 100%;
-        }//infoCard
+    
+    .infoSection .wrapper .infoColumn{
+        width: 100%;
         .card{
-            @include spaceBetween;
+             @include spaceBetween;
             .cardText{
                 width: 90%;
             }//cardText
             .icon{
-                margin-top: 55px;
+                 margin-top: 55px;
             }//icon
         }//card
-    }//wrapper
-}//infoSection
+    }//wrapper infoColumninfoSection
 
+    ///////////////////////////////////////
+    //homePage  sectionFive locationAndPlan 
 
-///////////////////////////////////////
-//homePage  sectionFive locationAndPlan 
-.locationAndPlan{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 8% 0 4% 0;
-    .locationAndPlanColumn{
-        width:100%;
-    }//locationAndPlanColumn
-    .locationAndPlanImage{
-        margin: 0 auto;
-        width: 80%;
-    }
-    .location{
+    .locationAndPlan{
         display: flex;
-        .locationAndPlanType{
-            margin-top: 40px;
-            text-align: center;
-            align-self: center;
-        }//locationAndPlanType
-    }//location
-    .plan{
-        display: flex;
-        flex-direction: column;
-        margin-top: 60px;
-        .locationAndPlanType{
-            text-align: center;
-            align-self: center;
-            margin-top: 40px;
-        }//locationAndPlanType
-    }//plan
-}//locationAndPlan
-
-///////////////////////////////////////
-//homePage sectionSeven freeTripSection
-.freeTripSection{
-    .wrapper{
-        flex-direction: column;
-        text-align: center;
-    }//wrapper
-}//freeTripSection
-}
-
-//@700 fix header h1
-@media(max-width:700px){
-header{
-    height: 100vh;
-    position: relative;
-    padding-top: 1px; 
-    background-size: 900px;
-    .wrapper{
         flex-direction: row;
-        .navBar{
-            margin: 0;
-        }
-    }//wrapper
-}//header.home
+        flex-wrap: wrap;
+        padding: 8% 0 4% 0;
+        .locationAndPlanColumn{
+            width:100%;
+        }//locationAndPlanColumn
+        .locationAndPlanImage{
+            margin: 0 auto;
+            width: 80%;
+        }//locationAndPlanImage
+        .location{
+            display: flex;
+            .locationAndPlanType{
+                margin-top: 40px;
+                text-align: center;
+                align-self: center;
+            }//locationAndPlanType
+        }//location
+        .plan{
+            display: flex;
+            flex-direction: column;
+            margin-top: 60px;
+            .locationAndPlanType{
+                text-align: center;
+                align-self: center;
+                margin-top: 40px;
+            }//locationAndPlanType
+        }//plan
+    }//locationAndPlan
 
-header .wrapper h1{
-    @include font($primaryFont, "", 2.5rem, 2.5rem, 0.33rem);
-    span{
-         @include font($secondaryFont, 900i, 3rem, "", normal);
-    }
-}//h1
+    ///////////////////////////////////////
+    //homePage sectionSeven freeTripSection
+    .freeTripSection{
+        .wrapper{
+            flex-direction: column;
+            text-align: center;
+        }//wrapper
+    }//freeTripSection
 
-//////////////////////////////////////
-// homePage  sectionFour infoSection
+}//1095px
 
-.infoSection{
-    .wrapper{
-        .infoColumn{
-            width: 100%;
-        }//infoCard
+///////////////////////////////////////
+//tablet
+
+@media(max-width:700px){
+
+    ///////////////////////////////////////
+    // homePage sectionOne header
+
+    header{
+        height: 100vh;
+        position: relative;
+        padding-top: 1px; 
+        background-size: 900px;
+        .wrapper{
+            flex-direction: row;
+            .navBar{
+                margin: 0;
+            }//navBar
+        }//wrapper
+    }//header.home
+
+    header .wrapper h1{
+        @include font($primaryFont, "", 2.5rem, 2.5rem, 0.33rem);
+        span{
+            @include font($secondaryFont, 900i, 3rem, "", normal);
+        }//span
+    }//h1
+
+    //////////////////////////////////////
+    // homePage  sectionFour infoSection
+
+    
+    .infoSection .wrapper .infoColumn{
+        width: 100%;
         .card{
             display: flex;
             flex-direction: column;
@@ -139,79 +141,83 @@ header .wrapper h1{
                 align-self: center;
             }//icon
         }//card
-    }//wrapper
-}//infoSection
+     }//infoSection wrapper infoColumn
 
 
-///////////////////////////////////////
-//homePage  sectionFive locationAndPlan 
-.locationAndPlan{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 8% 0 4% 0;
-    .locationAndPlanColumn{
-        width:100%;
-    }//locationAndPlanColumn
-    .locationAndPlanImage{
-        margin: 0 auto;
-        width: 80%;
-    }
-    .location{
+    ///////////////////////////////////////
+    //homePage  sectionFive locationAndPlan 
+    .locationAndPlan{
         display: flex;
-        .locationAndPlanType{
-            margin-top: 40px;
-            text-align: center;
-            align-self: center;
-        }//locationAndPlanType
-    }//location
-    .plan{
-        display: flex;
-        flex-direction: column;
-        margin-top: 60px;
-        .locationAndPlanType{
-            text-align: center;
-            align-self: center;
-            margin-top: 40px;
-        }//locationAndPlanType
-    }//plan
-}//locationAndPlan
-
-///////////////////////////////////////
-//homePage sectionSeven freeTripSection
-.freeTripSection{
-    .wrapper{
-        flex-direction: column;
-        text-align: center;
-    }//wrapper
-}//freeTripSection
-
-
-
-}
-@media(max-width:400px){
-
-header .wrapper h1{
-    @include font($primaryFont, "", 1.5rem, 1.8rem, 0.33rem);
-    span{
-        @include font($secondaryFont, 900i, 2rem, "", normal);
-    }
-}//h1
-
-///////////////////////////////////////
-// homePage  sectionThree houseGallary
-.houseGallary { 
-    padding: 8% 0;
-    background: $primaryBackgroundColor;
-    .wrapper{
         flex-direction: row;
         flex-wrap: wrap;
-       
-        .gallaryImage{ 
-            margin: 10px auto;
-            width: 90%;
-        }//gallaryImage
-    }//wrapper
-}//houseGallary
+        padding: 8% 0 4% 0;
+        .locationAndPlanColumn{
+            width:100%;
+        }//locationAndPlanColumn
+        .locationAndPlanImage{
+            margin: 0 auto;
+            width: 80%;
+        }//locationAndPlanImage
+        .location{
+            display: flex;
+            .locationAndPlanType{
+                margin-top: 40px;
+                text-align: center;
+                align-self: center;
+            }//locationAndPlanType
+        }//location
+        .plan{
+            display: flex;
+            flex-direction: column;
+            margin-top: 60px;
+            .locationAndPlanType{
+                text-align: center;
+                align-self: center;
+                margin-top: 40px;
+            }//locationAndPlanType
+        }//plan
+    }//locationAndPlan
 
-}
+    ///////////////////////////////////////
+    //homePage sectionSeven freeTripSection
+
+    .freeTripSection{
+        .wrapper{
+            flex-direction: column;
+            text-align: center;
+        }//wrapper
+    }//freeTripSection
+
+}//700px
+
+///////////////////////////////////////
+// mobial
+
+@media(max-width:400px){
+
+    ///////////////////////////////////////
+    // homePage sectionOne header
+
+    header .wrapper h1{
+        @include font($primaryFont, "", 1.5rem, 1.8rem, 0.33rem);
+        span{
+            @include font($secondaryFont, 900i, 2rem, "", normal);
+        }//span
+    }//h1
+
+    ///////////////////////////////////////
+    // homePage  sectionThree houseGallary
+    .houseGallary { 
+        padding: 8% 0;
+        background: $primaryBackgroundColor;
+        .wrapper{
+            flex-direction: row;
+            flex-wrap: wrap;
+            .gallaryImage{ 
+                margin: 10px auto;
+                width: 90%;
+            }//gallaryImage
+        }//wrapper
+    }//houseGallary
+
+}//400px
