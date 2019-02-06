@@ -3,6 +3,11 @@
 @media(max-width:1095px){
     ///////////////////////////////////////
     // blogPage  main starts
+
+    .blogBox{
+        display:none;
+    }
+ 
     .blogContent{
         display: flex;
         flex-wrap:wrap;

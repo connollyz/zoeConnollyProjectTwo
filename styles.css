@@ -337,7 +337,7 @@ header .wrapper {
 
 header h1 {
   position: relative;
-  top: 60%;
+  top: 70%;
   z-index: 999;
 }
 
@@ -982,13 +982,12 @@ header.contactHome {
   header .wrapper h1 {
     top: 10px;
   }
-  .headerBox {
-    display: none;
-  }
 }
 
 @media (max-width: 700px) {
   .navBar {
+    border: 1px solid blue;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1000,14 +999,10 @@ header.contactHome {
     flex-wrap: wrap;
     margin: 5px 0;
     height: 65px;
+    z-index: 9999;
   }
   .navBar .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+    border: 1px solid orange;
   }
   .navBar .logo a {
     color: #50e3c2;
@@ -1018,7 +1013,9 @@ header.contactHome {
     align-self: center;
   }
   nav {
-    width: 100px;
+    position: absolute;
+    top: 100%;
+    right: 0;
   }
   nav ul {
     border: 1px solid red;
@@ -1026,10 +1023,11 @@ header.contactHome {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
   }
   nav li {
     border: 1px solid red;
-    width: 100px;
   }
   nav li a {
     display: -webkit-box;
@@ -1045,7 +1043,16 @@ header.contactHome {
   }
 }
 
+@media (max-width: 700px) {
+  footer .wrapper p {
+    font-size: .7rem;
+  }
+}
+
 @media (max-width: 1095px) {
+  .headerBoxIndex {
+    display: none;
+  }
   .visitGuyana .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1264,6 +1271,9 @@ header.contactHome {
 }
 
 @media (max-width: 1095px) {
+  .blogBox {
+    display: none;
+  }
   .blogContent {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1351,5 +1361,40 @@ header.contactHome {
   .boxShadowRight {
     -webkit-box-shadow: 0px 0px;
     box-shadow: 0px 0px;
+  }
+}
+
+@media (max-width: 1095px) {
+  .contactArea .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border: 1px solid red;
+  }
+  .formBox {
+    width: 100%;
+    border: 1px solid red;
+  }
+  .contactInformation {
+    text-align: center;
+    width: 100%;
+    margin: 8% 0;
+  }
+  .contactInformation .pEmail {
+    margin: 20px 0;
+    font-weight: 700;
+  }
+  .contactInformation div p {
+    margin: 5px 0;
+  }
+  .socialMediaLinks {
+    width: 100%;
+    border: 1px SOLID red;
   }
 }

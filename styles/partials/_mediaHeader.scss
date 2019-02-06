@@ -2,19 +2,19 @@
     header .wrapper h1{
         top: 10px;
     }
-    .headerBox{
-        display: none;
-    }
 }
 @media(max-width: 700px){
     .navBar{
+        border: 1px solid blue;
+        position: relative;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         margin: 5px 0;
         height: 65px;
+        z-index: 9999;
         .logo{
-            @include flexGrow;
+            border: 1px solid orange;
             a{
                 color: $primaryColor;
                 text-transform: uppercase;
@@ -24,14 +24,19 @@
         }//logo
     }//navBar
     nav{
-        width:100px;
+        position: absolute;
+        top:100%;
+        right:0;
         ul{
             border: 1px solid red;
             flex-direction: column;
+            padding: 0;
+            margin:0;
+            
         }//ul
         li{
             border: 1px solid red;
-            width: 100px;
+            
             a{
                 @include flexGrow;
                 justify-content: space-around;
