@@ -337,7 +337,7 @@ header .wrapper {
 
 header h1 {
   position: relative;
-  top: 140px;
+  top: 60px;
   z-index: 999;
 }
 
@@ -537,6 +537,7 @@ header.home {
   position: relative;
   background: url("../../assets/homeImage1.jpg");
   background-repeat: no-repeat;
+  height: 600px;
 }
 
 header.home .wrapper {
@@ -551,8 +552,7 @@ header.home h1 {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  top: 250px;
-  left: 150px;
+  top: 200px;
   font-family: "Lato", sans-serif;
   font-weight: "";
   font-size: 2.5rem;
@@ -753,6 +753,7 @@ header.home h1 span {
 header.blogHome {
   background: url("/assets/blogImage1.jpg");
   background-repeat: no-repeat;
+  height: 600px;
 }
 
 header.blogHome .blogBox {
@@ -872,6 +873,7 @@ aside .sideBar ul li::before {
 header.contactHome {
   background: url("/assets/contactImage1.jpg");
   background-repeat: no-repeat;
+  height: 600px;
 }
 
 .contactArea {
@@ -886,7 +888,7 @@ header.contactHome {
 }
 
 .contactBox {
-  top: 40%;
+  top: 35%;
   width: 55%;
   background: #ffffff;
 }
@@ -988,7 +990,17 @@ header.contactHome {
   }
 }
 
+@media (max-width: 1095px) {
+  header .wrapper h1 {
+    top: 100px;
+  }
+}
+
 @media (max-width: 700px) {
+  header .wrapper h1 {
+    top: 150px;
+    font-size: 3rem;
+  }
   .navBar {
     border: 1px solid blue;
     position: relative;
@@ -1047,6 +1059,9 @@ header.contactHome {
     align-self: center;
   }
   .toggle {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     display: block;
     color: #fff;
     font-size: 1.5rem;
@@ -1229,10 +1244,22 @@ header.contactHome {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  header h1 {
-    position: relative;
-    top: 60%;
-    z-index: 999;
+  header .wrapper .navBar {
+    margin: 0;
+  }
+  header .wrapper h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: "";
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.33rem;
+  }
+  header .wrapper h1 span {
+    font-family: "Playfair Display", serif;
+    font-weight: 900i;
+    font-size: 3rem;
+    line-height: "";
+    letter-spacing: normal;
   }
   .infoSection .wrapper .infoColumn {
     width: 100%;
@@ -1319,6 +1346,20 @@ header.contactHome {
 }
 
 @media (max-width: 400px) {
+  header .wrapper h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: "";
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.33rem;
+  }
+  header .wrapper h1 span {
+    font-family: "Playfair Display", serif;
+    font-weight: 900i;
+    font-size: 2rem;
+    line-height: "";
+    letter-spacing: normal;
+  }
   .houseGallary {
     padding: 8% 0;
     background: #d2f9f1;
@@ -1445,13 +1486,14 @@ header.contactHome {
     border: 1px solid red;
   }
   .contactBox {
+    top: 500px;
     width: 100%;
     border: 1px solid red;
   }
   .contactInformation {
     text-align: center;
     width: 100%;
-    margin: 8% 0;
+    margin: 400px 0 8% 0;
   }
   .contactInformation .pEmail {
     margin: 20px 0;
@@ -1461,7 +1503,7 @@ header.contactHome {
     margin: 5px 0;
   }
   .socialMediaLinks {
-    width: 100%;
-    border: 1px SOLID red;
+    width: 300px;
+    margin: 0 auto;
   }
 }

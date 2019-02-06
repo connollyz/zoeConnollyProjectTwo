@@ -97,8 +97,6 @@
 
 //@700 fix header h1
 @media(max-width:700px){
-
-
 header{
     height: 100vh;
     position: relative;
@@ -106,13 +104,18 @@ header{
     background-size: 900px;
     .wrapper{
         flex-direction: row;
+        .navBar{
+            margin: 0;
+        }
     }//wrapper
-    h1{
-        position: relative;
-        top: 60%;
-        z-index: 999;
-    }//h1
 }//header.home
+
+header .wrapper h1{
+    @include font($primaryFont, "", 2.5rem, 2.5rem, 0.33rem);
+    span{
+         @include font($secondaryFont, 900i, 3rem, "", normal);
+    }
+}//h1
 
 //////////////////////////////////////
 // homePage  sectionFour infoSection
@@ -187,6 +190,14 @@ header{
 
 }
 @media(max-width:400px){
+
+header .wrapper h1{
+    @include font($primaryFont, "", 1.5rem, 1.8rem, 0.33rem);
+    span{
+        @include font($secondaryFont, 900i, 2rem, "", normal);
+    }
+}//h1
+
 ///////////////////////////////////////
 // homePage  sectionThree houseGallary
 .houseGallary { 

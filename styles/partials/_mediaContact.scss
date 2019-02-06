@@ -2,10 +2,6 @@
     ///////////////////////////////////////
     // blogPage sectionOne bloghome
 
-
-    //need to target contact box and make full width of screen
-    // need to get side bar to bottom center  maybe align center?? 
-
     // contactPage  main starts
     .contactArea .wrapper{
         display:flex;
@@ -16,6 +12,7 @@
     }//contactArea 
     
     .contactBox{
+            top: 500px;
             width: 100%;
             border: 1px solid red;
         }//contactBox
@@ -23,7 +20,7 @@
     .contactInformation{
         text-align: center;
         width: 100%;
-        margin: 8% 0;
+        margin: 400px 0 8% 0;
         .pEmail{
             margin: 20px 0;
             font-weight: 700;
@@ -34,7 +31,7 @@
     }//contactInformation
 
     .socialMediaLinks{
-        width: 100%;
-        border: 1px SOLID red;
+        width: 300px;
+        margin: 0 auto;
     }//socialMediaLinks
 }

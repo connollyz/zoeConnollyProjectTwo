@@ -1,7 +1,15 @@
 @media(max-width:1095px){
+   header .wrapper h1{
+        top: 100px;
+    }
 
 }
 @media(max-width: 700px){
+     header .wrapper h1{
+        top: 150px;
+        font-size: 3rem;
+    }
+
     .navBar{
         border: 1px solid blue;
         position: relative;
@@ -46,6 +54,7 @@
     }//nav
 
 .toggle{
+    align-self: center;
     display: block;
     color: #fff;
     font-size: 1.5rem;

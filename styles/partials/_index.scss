@@ -10,8 +10,7 @@ header.home{
     h1{
         position: relative;
         align-self: center;
-        top: 250px;
-        left: 150px;
+        top: 200px;
         @include font($primaryFont, "", 2.5rem, 3.3rem, 0.33rem);
         text-transform: lowercase;
         color: $headerColor;
